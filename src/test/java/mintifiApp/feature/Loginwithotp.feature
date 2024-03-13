@@ -19,8 +19,10 @@ Scenario: [TC-LO-01] To verify the validation for 'statusLoginAPI' of mobile no 
     And request getRequestBodyLogin.verifySendOtp
     When method post
     Then print response
-
     And assert responseStatus == 200
+
+    * def storedRequestidValues = response.requestId
+    * print storedRequestidValues
 
 # In response message node is been verified.    
 * def expectedOtpMadate = getResponseBodyLogin.verificationStatusResponseOtp.message
@@ -80,7 +82,25 @@ Scenario: [TC-LO-02] To verify 'Fuzzy Match' for OTP verification Api for respon
     * def actualResponseDataTypes = response
     * print actualResponseDataTypes
     And match actualResponseDataTypes == expectedResponseDataTypes
-
-    * fetchDataFromPrerequisiteFile.actualRequestid.requestId = response.requestId
-    * def storedRequestidValues = fetchDataFromPrerequisiteFile.actualRequestid
+      
+@loginotp @otpverify  
+Scenario: [TC-LO-03] To verify the validation for 'Otp verify API' of mobile no via otp
+    Given url getUrl.mintifiBaseUrl + getUrl.typeAuthSendOtpAPI
+    * headers getHeaders
+    And request getRequestBodyLogin.verifySendOtp
+    When method post
+    Then print response
+    And assert responseStatus == 200
+    * def storedRequestidValues = response.requestId
     * print storedRequestidValues
+
+    Given url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyOtpAPI
+    * headers getHeaders
+    * def requestBody = getRequestBodyLogin.verifyOtp
+    * requestBody.requestId = storedRequestidValues
+    * request requestBody
+    Then print requestBody
+    When method post
+    Then print response
+    
+    And assert responseStatus == 200
