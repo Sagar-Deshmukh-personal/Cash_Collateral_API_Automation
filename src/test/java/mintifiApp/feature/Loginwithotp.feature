@@ -84,7 +84,7 @@ Scenario: [TC-LO-02] To verify 'Fuzzy Match' for OTP verification Api for respon
     And match actualResponseDataTypes == expectedResponseDataTypes
       
 @loginotp @otpverify  
-Scenario: [TC-LO-03] To verify the validation for 'Otp verify API' of mobile no via otp
+Scenario: [TC-LO-03] To verify the validation for 'Snd and verify Otp verify API' of mobile no via otp
     Given url getUrl.mintifiBaseUrl + getUrl.typeAuthSendOtpAPI
     * headers getHeaders
     And request getRequestBodyLogin.verifySendOtp
