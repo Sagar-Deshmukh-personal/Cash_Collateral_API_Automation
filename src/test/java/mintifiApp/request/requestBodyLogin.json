@@ -1,0 +1,40 @@
+{
+
+    "validMobileNumber":{
+        "mobileNumber": 8850576589,
+        "custId": ""
+    },
+    
+    "verifyMobileNumberUseingMpin": {
+        "mobileNumber": 8850576589,
+        "mpin": "1111",
+        "module": "LOGIN",
+        "custId": ""
+    },
+    
+    "validCustid":{
+        "mobileNumber": "",
+        "custId": "BEJ012"
+    },
+
+    "verifyCustidUseingMpin": {
+        "mobileNumber": "",
+        "mpin": 1111,
+        "module": "LOGIN",
+        "custId": "BEJ012"
+    },
+
+    "verifySendOtp":{
+        "mobileNumber": "8850576589",
+        "module": "LOGIN",
+        "custId": ""
+    },
+
+    "verifyOtp":{
+        "requestId": "9390109c-50c1-43d3-ac89-3b617bde04cb",
+        "otp": "111111"
+    }
+
+    
+
+}

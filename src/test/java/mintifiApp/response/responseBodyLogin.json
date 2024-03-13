@@ -1,0 +1,46 @@
+{
+
+   "verifyStatusResponse":{
+    "mpinRequired": true,
+    "blockedTime": 0,
+    "accountLocked": false
+  },
+
+  "verifyMpinLogin": {
+    "statusCode": "200 OK",
+    "message": "Verified successfully",
+    "token": "",
+    "refreshToken": "",
+    "showMpin": false
+  },
+
+   "verifyMpinLoginFuzzyMatch": {
+    "statusCode": "#string",
+    "message": "#string",
+    "token": "#string",
+    "refreshToken": "#string",
+    "showMpin": "#boolean"
+  },
+   "verifyStatusResponseFuzzyMatch":{
+    "mpinRequired": "#boolean",
+    "blockedTime": "#number",
+    "accountLocked": "#boolean"
+  },
+
+  "verificationStatusResponseOtp":{
+    "statusCode": 200,
+    "message": "OTP sent successfully",
+    "requestId": "258e0e25-955f-4dab-b9c5-060f41239679",
+    "blockedTime": 0,
+    "accountLocked": false
+},
+  
+  "verifyStatusResponseFuzzyMatchOfOtp":{
+    "statusCode": "#number",
+    "message": "#string",
+    "requestId": "#string",
+    "blockedTime": "#number",
+    "accountLocked": "#boolean"
+}
+
+}
