@@ -1,4 +1,4 @@
-@sanityotp @loginotp
+@sanity @loginotp
 Feature: To demonstarte login with otp testcases 
 
 Background:
@@ -104,3 +104,4 @@ Scenario: [TC-LO-03] To verify the validation for 'Snd and verify Otp verify API
     Then print response
     
     And assert responseStatus == 200
+

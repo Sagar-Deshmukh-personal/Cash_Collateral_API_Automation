@@ -1,4 +1,4 @@
-@sanitycustid @logincustid
+@sanity @logincustid
 Feature: To demonstarte login for Cust id testcases 
 
 Background:

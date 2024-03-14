@@ -1,4 +1,4 @@
-@sanitymobileno @login
+@sanity @login
 Feature: To demonstarte login testcases 
 
 Background:
