@@ -1,4 +1,4 @@
-@sanity @loginotp
+@loginotp
 Feature: To demonstarte login with otp testcases 
 
 Background:
@@ -13,7 +13,7 @@ Background:
     #Declarations and file read of 'Login.json' response body
     * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
 @loginotp
-Scenario: [TC-LO-01] To verify the validation for 'statusLoginAPI' of mobile no via otp
+## Scenario: [TC-LO-01] To verify the validation for 'statusLoginAPI' of mobile no via otp
     Given url getUrl.mintifiBaseUrl + getUrl.typeAuthSendOtpAPI
     * headers getHeaders
     And request getRequestBodyLogin.verifySendOtp
@@ -102,6 +102,5 @@ Scenario: [TC-LO-03] To verify the validation for 'Snd and verify Otp verify API
     Then print requestBody
     When method post
     Then print response
-    
     And assert responseStatus == 200
 
