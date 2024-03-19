@@ -41,6 +41,13 @@
     "requestId": "#string",
     "blockedTime": "#number",
     "accountLocked": "#boolean"
+},
+
+"verifyCreateDrawdown":{
+  "id": "",
+  "drawdown_amount": "",
+  "status": "verified",
+  "message": "Request to utilise your Mintifi credit has been submitted successfully!"
 }
 
 }
