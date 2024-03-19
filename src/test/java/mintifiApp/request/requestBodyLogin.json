@@ -1,12 +1,12 @@
 {
 
     "validMobileNumber":{
-        "mobileNumber": 8850576589,
+        "mobileNumber": 8888663025,
         "custId": ""
     },
     
     "verifyMobileNumberUseingMpin": {
-        "mobileNumber": 8850576589,
+        "mobileNumber": 8888663025,
         "mpin": "1111",
         "module": "LOGIN",
         "custId": ""
@@ -14,18 +14,18 @@
     
     "validCustid":{
         "mobileNumber": "",
-        "custId": "BEJ012"
+        "custId": "ZDO682"
     },
 
     "verifyCustidUseingMpin": {
         "mobileNumber": "",
         "mpin": 1111,
         "module": "LOGIN",
-        "custId": "BEJ012"
+        "custId": "ZDO682"
     },
 
     "verifySendOtp":{
-        "mobileNumber": "8850576589",
+        "mobileNumber": "9096632691",
         "module": "LOGIN",
         "custId": ""
     },
