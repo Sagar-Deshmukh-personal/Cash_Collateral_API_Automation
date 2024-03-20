@@ -30,7 +30,7 @@
   "verificationStatusResponseOtp":{
     "statusCode": 200,
     "message": "OTP sent successfully",
-    "requestId": "258e0e25-955f-4dab-b9c5-060f41239679",
+    "requestId": "",
     "blockedTime": 0,
     "accountLocked": false
 },
@@ -41,13 +41,6 @@
     "requestId": "#string",
     "blockedTime": "#number",
     "accountLocked": "#boolean"
-},
-
-"verifyCreateDrawdown":{
-  "id": "",
-  "drawdown_amount": "",
-  "status": "verified",
-  "message": "Request to utilise your Mintifi credit has been submitted successfully!"
 }
 
 }

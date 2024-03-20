@@ -7,9 +7,7 @@
         "typeAuthStatusCustidApi": "/mpin/status",
         "typeAuthVerifyCustidApi": "/mpin/verify",
         "typeAuthSendOtpAPI": "/otp",
-        "typeAuthVerifyOtpAPI": "/otp/verify",
-        "typeAuthCreateDrawdown": "/invoices/createDrawdown"
-        
+        "typeAuthVerifyOtpAPI": "/otp/verify"
       },
 
     "actualHeaders": {
