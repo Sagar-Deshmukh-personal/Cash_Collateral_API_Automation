@@ -20,19 +20,8 @@ Scenario: [TC-LO-01] To verify the validation for 'statusLoginAPI' of mobile no 
     When method post
     Then print response
     And assert responseStatus == 200
-    * def storedRequestidValues = response.requestId
-    * print storedRequestidValues
 
-    Given url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyOtpAPI
-    * headers getHeaders
-    * def requestBody = getRequestBodyLogin.verifyOtp
-    * requestBody.requestId = storedRequestidValues
-    * request requestBody
-    Then print requestBody
-    When method post
-    Then print response
-    And assert responseStatus == 200
-
+    
 # In response message node is been verified.    
 * def expectedOtpMessage = getResponseBodyLogin.verificationStatusResponseOtp.message
 * print expectedOtpMessage
@@ -62,6 +51,19 @@ Scenario: [TC-LO-01] To verify the validation for 'statusLoginAPI' of mobile no 
 * print expectedOtpStatusCode
 * def actualOtpStatusCode = response.statusCode
 * print actualOtpStatusCode
+
+    * def storedRequestidValues = response.requestId
+    * print storedRequestidValues
+
+    Given url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyOtpAPI
+    * headers getHeaders
+    * def requestBody = getRequestBodyLogin.verifyOtp
+    * requestBody.requestId = storedRequestidValues
+    * request requestBody
+    Then print requestBody
+    When method post
+    Then print response
+    And assert responseStatus == 200
 
 # Verification of message node in verify otp API
 * def expectedOtpMessage = getResponseBodyLogin.verifyStatusSucessOtpResponse.message
