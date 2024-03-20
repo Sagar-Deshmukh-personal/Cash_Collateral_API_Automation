@@ -34,6 +34,14 @@
     "blockedTime": 0,
     "accountLocked": false
 },
+ 
+  "verifyStatusSucessOtpResponse":{
+    "statusCode": "200 OK",
+    "message": "OTP verified successfully",
+    "token": "",
+    "refreshToken": "",
+    "showMpin": false
+},
   
   "verifyStatusResponseFuzzyMatchOfOtp":{
     "statusCode": "#number",

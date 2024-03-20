@@ -63,6 +63,30 @@ Scenario: [TC-LO-01] To verify the validation for 'statusLoginAPI' of mobile no 
 * def actualOtpStatusCode = response.statusCode
 * print actualOtpStatusCode
 
+# Verification of message node in verify otp API
+* def expectedOtpMessage = getResponseBodyLogin.verifyStatusSucessOtpResponse.message
+* print expectedOtpMessage
+* def actualOtpMessage = response.message
+* print actualOtpMessage
+
+# In response Token node is been verified
+* def expectedOtpRequestId = getResponseBodyLogin.verifyStatusSucessOtpResponse.token
+* print expectedOtpRequestId
+* def actualOtpRequestId = response.token
+* print actualOtpRequestId
+
+# In response showMpin node is been verified
+* def expectedOtpRequestId = getResponseBodyLogin.verifyStatusSucessOtpResponse.showMpin
+* print expectedOtpRequestId
+* def actualOtpRequestId = response.showMpin
+* print actualOtpRequestId
+
+# In response showMpin node is been verified
+* def expectedOtpRequestId = getResponseBodyLogin.verifyStatusSucessOtpResponse.statusCode
+* print expectedOtpRequestId
+* def actualOtpRequestId = response.statusCode
+* print actualOtpRequestId
+
 @loginotp @fuzzyOTP
 Scenario: [TC-LO-02] To verify 'Fuzzy Match' for OTP verification Api for response body with correct data
     Given url getUrl.mintifiBaseUrl + getUrl.typeAuthSendOtpAPI
