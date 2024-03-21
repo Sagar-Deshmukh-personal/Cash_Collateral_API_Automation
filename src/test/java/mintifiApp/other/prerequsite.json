@@ -8,7 +8,8 @@
         "typeAuthVerifyCustidApi": "/mpin/verify",
         "typeAuthSendOtpAPI": "/otp",
         "typeAuthVerifyOtpAPI": "/otp/verify",
-        "typeAuthCreateDrawdown": "/invoices/createDrawdown"
+        "typeAuthCreateDrawdown": "/invoices/createDrawdown",
+        "typeAuthCreateInvoice": "/invoices"
       },
 
     "actualHeaders": {

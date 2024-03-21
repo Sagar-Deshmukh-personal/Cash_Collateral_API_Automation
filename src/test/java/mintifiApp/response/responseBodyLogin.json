@@ -56,6 +56,11 @@
     "drawdown_amount": "",
     "status": "verified",
     "message": "Request to utilise your Mintifi credit has been submitted successfully!"
+},
+"verifyDrawdownErrorResponse":{
+  "fieldName": null,
+  "message": "{\"errors\":[{\"status\":422,\"code\":\"ER-PARAM-MISSING-501\",\"detail\":\"Cannot create Drawdown as Invoice is already Paid\"}]}",
+  "statusCode": 500
 }
 
 }
