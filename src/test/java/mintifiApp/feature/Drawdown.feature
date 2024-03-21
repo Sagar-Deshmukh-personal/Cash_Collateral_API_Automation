@@ -14,7 +14,7 @@ Background:
     * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
     
 @drawdown
-Scenario: [TC-LO-01] To verify the drawdown API
+Scenario: [TC-DDR-01] To verify the drawdown API
     # calling genrate csrf secanrio from registred.feature
     * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Register.feature@generateToken')
     * print fetchGenrateCsrfScenario
