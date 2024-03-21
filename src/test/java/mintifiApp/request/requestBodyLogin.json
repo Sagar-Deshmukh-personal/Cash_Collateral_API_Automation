@@ -33,6 +33,22 @@
     "verifyOtp":{
         "requestId": "",
         "otp": "111111"
+    },
+
+    "verifyDrawdownRequest":{
+        "drawdown_invoice": [
+            {
+                "invoice_details": [
+                    {
+                        "id": "55558110",
+                        "user_requested_amount": "500"
+                    }
+                ],
+                "bank_account_id": "30684"
+            }
+        ],
+        "distributor_company_id": "25974384",
+        "anchor_id": "38"
     }
 
 }
