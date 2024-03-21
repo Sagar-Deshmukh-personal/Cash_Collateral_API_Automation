@@ -1,4 +1,4 @@
-@sanity @loginotp 
+@sanity @loginotp
 Feature: To demonstarte login with otp testcases 
 
 Background:

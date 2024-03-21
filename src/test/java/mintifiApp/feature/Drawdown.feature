@@ -12,6 +12,7 @@ Background:
     
     #Declarations and file read of 'Login.json' response body
     * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
+    
 @drawdown
 Scenario: [TC-LO-01] To verify the drawdown API
     Given url getUrl.mintifiBaseUrl + getUrl.typeAuthSendOtpAPI
