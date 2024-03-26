@@ -14,7 +14,7 @@ Background:
     * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
     
 @ticket
-Scenario: [TC-Tk-01] To verify the Create Ticket API
+Scenario: [TC-Tk-01] Verify successful/error ticket creation
        # calling genrate csrf secanrio from registred.feature
        * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
        * print fetchGenrateCsrfScenario
@@ -35,7 +35,7 @@ Scenario: [TC-Tk-01] To verify the Create Ticket API
        # Match the actual response against the expected response
        And match response == expectedSuccessfulResponse
        Then print response
- 
+
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
         * headers getHeaders
         * headers fetchGenrateCsrfScenario.storedLoginTokenValues
