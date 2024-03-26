@@ -15,23 +15,40 @@ Background:
     
 @ticket
 Scenario: [TC-Tk-01] To verify the Create Ticket API
-    # calling genrate csrf secanrio from registred.feature
-    * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
-    * print fetchGenrateCsrfScenario
-    * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
+       # calling genrate csrf secanrio from registred.feature
+       * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
+       * print fetchGenrateCsrfScenario
+       * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
 
-    Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
-    * headers getHeaders
-    * headers fetchGenrateCsrfScenario.storedLoginTokenValues
-     And header Authorization = Authorization
-     And request getRequestBodyLogin.verifyTicketCreationRequest
-     When method post
-     Then status 200
-     Then print response
+        Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
+       * headers getHeaders
+       * headers fetchGenrateCsrfScenario.storedLoginTokenValues
+         And header Authorization = Authorization
+         And request getRequestBodyLogin.verifyTicketCreationRequest
+         When method post
+         Then status 200
+         Then print response
 
-    # Define the expected response
-     * def expectedSuccessfulResponse = { statusCode: 200, message: 'Success' }
+       # Define the expected response
+       * def expectedSuccessfulResponse = { statusCode: 200, message: 'Success' }
 
-    # Match the actual response against the expected response
-      And match response == expectedSuccessfulResponse
-      Then print response
+       # Match the actual response against the expected response
+       And match response == expectedSuccessfulResponse
+       Then print response
+ 
+        Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
+        * headers getHeaders
+        * headers fetchGenrateCsrfScenario.storedLoginTokenValues
+        And header Authorization = Authorization
+        And request getRequestBodyLogin.verifyTicketErrorRequest
+        When method post
+        Then status 500
+        Then print response
+  
+      # Define the expected response
+        * def expectedSuccessfulResponse = { statusCode: 500, message: 'Ticket creation failed' }
+  
+      # Match the actual response against the expected response
+         And match response == expectedSuccessfulResponse
+         Then print response
+  

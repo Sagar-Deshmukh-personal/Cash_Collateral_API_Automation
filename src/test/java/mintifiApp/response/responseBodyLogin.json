@@ -66,6 +66,11 @@
   "verifyTicketStatus": {
    "statusCode": 200,
    "message": "Success"
-  }
+  },
+
+  "verifyTicketErrorResponse":{
+    "statusCode": 500,
+    "message": "Ticket creation failed"
+}
 
 }

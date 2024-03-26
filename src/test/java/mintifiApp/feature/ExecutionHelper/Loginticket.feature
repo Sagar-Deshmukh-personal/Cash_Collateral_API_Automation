@@ -11,20 +11,17 @@ Background:
     * def getRequestBodyLogin = read('../request/requestBodyLogin.json')
     
     @generateLoginToken
-    Scenario: To verify 'Login' feature for gentating token using Mobile
+    Scenario:[TC-TLG-01] To verify 'Login' feature for gentating token using Mobile
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthStatusApi
         * headers getHeaders
         And request getRequestBodyLogin.VerifyTicketceationmobileNo
         When method post
         Then status 200
         And print response
-        And print responseHeaders
-        And print responseCookies
-    
         And assert responseStatus == 200
     
     @generateLoginToken
-    Scenario: To verify 'Login' feature for gentating token
+    Scenario: [TC-LG-02]To verify 'Login' feature for gentating token
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyApi
         * headers getHeaders
         And request getRequestBodyLogin.verifyTicketCreationmobileno
@@ -33,6 +30,7 @@ Background:
         When method post
         Then status 200
         And print response
+        And assert responseStatus == 200
     
         * fetchDataFromPrerequisiteFile.actualToken.token = response.token
         * fetchDataFromPrerequisiteFile.actualToken.refreshToken = response.refreshToken

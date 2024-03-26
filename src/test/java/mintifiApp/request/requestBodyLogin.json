@@ -77,6 +77,12 @@
         "category": "DDR related",
         "subCategory": "DDR amount clarification required",
         "description": "Need to Clarify the DDR Amount"
+    },
+
+    "verifyTicketErrorRequest":{
+        "category": " ",
+        "subCategory": "DDR amount clarification required",
+        "description": "Need to Clarify the DDR Amount"
     }
 
 }
