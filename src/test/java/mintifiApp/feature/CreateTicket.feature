@@ -22,7 +22,7 @@ Scenario: [TC-Tk-01] To verify the Create Ticket API
 
     Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
     * headers getHeaders
-    #* headers fetchGenrateCsrfScenario.storedLoginTokenValues
+    * headers fetchGenrateCsrfScenario.storedLoginTokenValues
      And header Authorization = Authorization
      And request getRequestBodyLogin.verifyTicketCreationRequest
      When method post
