@@ -9,7 +9,8 @@
         "typeAuthSendOtpAPI": "/otp",
         "typeAuthVerifyOtpAPI": "/otp/verify",
         "typeAuthCreateDrawdown": "/invoices/createDrawdown",
-        "typeAuthCreateInvoice": "/invoices"
+        "typeAuthCreateInvoice": "/invoices",
+        "typeAuthCreateTicket": "/tickets"
       },
 
     "actualHeaders": {

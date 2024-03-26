@@ -74,9 +74,8 @@
     },
 
     "VerifyTicketCreationrequest":{
-        "category": "Credit Related",
-        "subCategory": "Rectification in Bureau",
-        "description": "sdfgfsdf"
+        "category": "DDR related",
+        "subCategory": "DDR amount clarification required",
+        "description": "Need to Clarify the DDR Amount"
     }
-
 }

@@ -4,12 +4,12 @@ Feature: To demonstarte store and feed resposne data of a request in other featu
 
 Background:
     #Declarations and file read of headers/ cookies
-        * def fetchDataFromPrerequisiteFile = read('../../other/prerequsite.json')
+        * def fetchDataFromPrerequisiteFile = read('../other/prerequsite.json')
         * def getUrl = fetchDataFromPrerequisiteFile.config
         * def getHeaders = fetchDataFromPrerequisiteFile.actualHeaders
     
     #Declarations and file read of 'Login.json' request body
-    * def getRequestBodyLogin = read('../../request/requestBodyLogin.json')
+    * def getRequestBodyLogin = read('../request/requestBodyLogin.json')
     
     @generateLoginToken
     Scenario: To verify 'Login' feature for gentating token using Mobile
