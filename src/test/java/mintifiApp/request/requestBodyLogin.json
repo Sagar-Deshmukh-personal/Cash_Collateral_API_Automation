@@ -73,13 +73,13 @@
         "custId": ""
     },
 
-    "verifyTicketCreationRequest":{
+    "verifyTCSRequest":{
         "category": "DDR related",
         "subCategory": "DDR amount clarification required",
         "description": "Need to Clarify the DDR Amount"
     },
 
-    "verifyTicketErrorRequest":{
+    "verifyTCErrorRequest":{
         "category": " ",
         "subCategory": "DDR amount clarification required",
         "description": "Need to Clarify the DDR Amount"

@@ -63,12 +63,12 @@
   "statusCode": 500
 },
 
-  "verifyTicketStatus": {
+  "verifyTCSResponse": {
    "statusCode": 200,
    "message": "Success"
   },
 
-  "verifyTicketErrorResponse":{
+  "verifyTCEResponse":{
     "statusCode": 500,
     "message": "Ticket creation failed"
 }

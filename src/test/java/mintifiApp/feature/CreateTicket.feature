@@ -24,7 +24,7 @@ Scenario: [TC-Tk-01] Verify successful/error ticket creation
        * headers getHeaders
        * headers fetchGenrateCsrfScenario.storedLoginTokenValues
          And header Authorization = Authorization
-         And request getRequestBodyLogin.verifyTicketCreationRequest
+         And request getRequestBodyLogin.verifyTCSRequest
          When method post
          Then status 200
          Then print response
@@ -40,7 +40,7 @@ Scenario: [TC-Tk-01] Verify successful/error ticket creation
         * headers getHeaders
         * headers fetchGenrateCsrfScenario.storedLoginTokenValues
         And header Authorization = Authorization
-        And request getRequestBodyLogin.verifyTicketErrorRequest
+        And request getRequestBodyLogin.verifyTCErrorRequest
         When method post
         Then status 500
         Then print response
