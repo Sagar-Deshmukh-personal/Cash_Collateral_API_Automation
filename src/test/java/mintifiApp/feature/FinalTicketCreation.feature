@@ -37,3 +37,4 @@ Scenario Outline: Verify successful/error ticket creation
 Examples:
 | Test Case |          requestBody          | responseCode | responseErrorMessage |
 | TC-TK-01  | getRequestBodyLogin.verifyTCSRequest |  200      | verifyTCSResponse   |
+| TC-TK-02  | getRequestBodyLogin.verifyTCErrorRequest |  500  | verifyTCEResponse  |
