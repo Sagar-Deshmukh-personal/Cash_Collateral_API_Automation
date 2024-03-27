@@ -51,4 +51,3 @@ Scenario: [TC-Tk-01] Verify successful/error ticket creation
       # Match the actual response against the expected response
          And match response == expectedSuccessfulResponse
          Then print response
-  
