@@ -103,7 +103,7 @@
     },
 
     "verifyUpdateEmail":{
-        "email": "sagar.deshmukh456@yopmail.com",
+        "email": "",
         "module": "UPDATE_EMAIL"
     },
 
