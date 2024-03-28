@@ -10,7 +10,9 @@
         "typeAuthVerifyOtpAPI": "/otp/verify",
         "typeAuthCreateDrawdown": "/invoices/createDrawdown",
         "typeAuthCreateInvoice": "/invoices",
-        "typeAuthCreateTicket": "/tickets"
+        "typeAuthCreateTicket": "/tickets",
+        "typeAuthUpdateMobile": "/otp/mobile-email",
+        "typeAuthConfirmMobile": "/customer/mobile-email"
       },
 
     "actualHeaders": {
