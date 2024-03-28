@@ -91,6 +91,22 @@
     "fieldName": null,
     "message": "Mobile Number is already associated with another account",
     "statusCode": 400
-  }
+  },
+
+  "verifyUpdateEmailResponse":{
+    "requestId": "",
+    "otp": "111111",
+    "module": "UPDATE_EMAIL"
+  },
+
+  "verifyEmailSucessResponse":{
+    "statusCode": 200,
+    "message": "OTP sent successfully",
+    "requestId": "",
+    "blockedTime": 0,
+    "accountLocked": false
+}
+
+
 
 }

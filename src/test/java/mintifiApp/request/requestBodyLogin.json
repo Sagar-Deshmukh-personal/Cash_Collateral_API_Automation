@@ -100,6 +100,17 @@
         "mobileNumber": "9834661017",
         "pan": "GZJPW8073F",
         "module": "UPDATE_MOBILE"
-    }
+    },
+
+    "verifyUpdateEmail":{
+        "email": "sagar.deshmukh456@yopmail.com",
+        "module": "UPDATE_EMAIL"
+    },
+
+    "verifyconfirmEmail":{
+        "requestId": "",
+        "otp": "111111",
+        "module": "UPDATE_EMAIL"
+      }
     
 }
