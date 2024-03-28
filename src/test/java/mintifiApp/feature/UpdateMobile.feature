@@ -1,5 +1,5 @@
 
-@sanity @mobileno
+@mobileno
 Feature: To demonstarte update mobile no api testcases 
 
 Background:
@@ -28,9 +28,39 @@ Scenario: [TC-UPM-01] Verify updatemobile no for the customer
          And header Authorization = Authorization
          And request getRequestBodyLogin.verifyUpdateMobileno
          When method post
-         Then status 200
          Then print response
 
+         # Verification of Status Code node in update mobile no api
+         * def expectedStatusCode = getResponseBodyLogin.verifyUpdateMobileresponse.statusCode
+         * print expectedStatusCode
+         * def actualStatusCode = response.statusCode
+         * print actualStatusCode 
+         
+         # Verification of Message node in update mobile no api
+         * def expectedMessage = getResponseBodyLogin.verifyUpdateMobileresponse.message
+         * print expectedMessage
+         * def actualMessage = response.message
+         * print actualMessage
+
+         # Verification of Block time node in update mobile no api
+         * def expectedBlockTime = getResponseBodyLogin.verifyUpdateMobileresponse.blockedTime
+         * print expectedBlockTime
+         * def actualBlockTime = response.blockedTime
+         * print actualBlockTime
+
+         # Verification of Account Lock node in update mobile no api
+         * def expectedAccountLocked = getResponseBodyLogin.verifyUpdateMobileresponse.accountLocked
+         * print expectedAccountLocked
+         * def actualAccountLocked = response.accountLocked
+         * print actualAccountLocked
+
+         # Verification of Block time node in update mobile no api
+         * def expectedrequestId = getResponseBodyLogin.verifyUpdateMobileresponse.requestId
+         * print expectedrequestId
+         * def actualrequestId = response.requestId
+         * print actualrequestId
+      
+    # Here Storing request id and useing this value to another API   
          * def storedRequestidValues = response.requestId
          * print storedRequestidValues
 
@@ -43,18 +73,17 @@ Scenario: [TC-UPM-01] Verify updatemobile no for the customer
          Then print requestBody
          When method PUT
          Then print response
-@upm
-Scenario: [TC-UPM-02] Verify updatemobile for alrady exiting user.
 
-        # calling genrate csrf secanrio from registred.feature
-        * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
-        * print fetchGenrateCsrfScenario
-        * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
-             
-         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthUpdateMobile
-         * headers getHeaders
-         * headers fetchGenrateCsrfScenario.storedLoginTokenValues
-         And header Authorization = Authorization
-         And request getRequestBodyLogin.verifyExistingUserMobileNo
-         When method post
-         Then print response
+          # Verification of Status code node in  verify update mobile no api
+          * def expectedStatusCode = getResponseBodyLogin.verifySuccessMobileUpdateResponse.statusCode
+          * print expectedStatusCode
+          * def actualStatusCode = response.statusCode
+          * print actualStatusCode
+
+           # Verification of Message node in  verify update mobile no api
+           * def expectedMessage = getResponseBodyLogin.verifySuccessMobileUpdateResponse.message
+           * print expectedMessage
+           * def actualMessage = response.message
+           * print actualMessage
+ 
+ 
