@@ -85,5 +85,3 @@ Scenario: [TC-UPM-01] Verify updatemobile no for the customer
            * print expectedMessage
            * def actualMessage = response.message
            * print actualMessage
- 
- 
