@@ -35,4 +35,6 @@ public class mintifiTest {
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
     }
+
+    
 }
