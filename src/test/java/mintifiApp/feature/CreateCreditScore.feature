@@ -1,4 +1,4 @@
-@creditscore
+@sanity @creditscore
 Feature: To demonstarte the customer Credit Score API
 
 Background:
@@ -10,24 +10,46 @@ Background:
         * header Accept = 'application/json, text/plain, */*'
     
     #Declarations and file read of 'Login.json' request body
-    * def getRequestBodyLogin = read('../request/requestBodyLogin.json')
+        * def getRequestBodyLogin = read('../request/requestBodyLogin.json')
     
     #Declarations and file read of 'Login.json' response body
-    * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
+        * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
 
 @creditscore
-Scenario: [TC-DDR-01] To verify the customer Credit Score API
+Scenario: [TC-CCS-01] To verify the customer Credit Score API
 
-calling genrate csrf secanrio from registred.feature
-    * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
-    * print fetchGenrateCsrfScenario
-    * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
+    # calling genrate csrf secanrio from registred.feature
+       * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
+       * print fetchGenrateCsrfScenario
+       * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
 
-    Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCheckCreditScore
-    And headers getHeaders
-    And header Authorization = Authorization
-    When method GET
-    Then status 200
+    
+        Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCheckCreditScore
+        And headers getHeaders
+        And header Authorization = Authorization
+        When method GET
+        Then status 200
+        And def score = response.score
+        Then print score
+        And def type = response.type
+        Then print type
 
-    And match response == { score: '#string', type: '#string' }
-    Then print response
+    # Define a function to convert the numeric score to the corresponding category
+    * def getScoreCategory = 
+      """
+    function(score) {
+      if(score >= 851) return 'Excellent';
+      else if(score >= 751) return 'Good';
+      else if(score >= 651) return 'Fair';
+      else if(score >= 300) return 'Poor';
+      else return 'Very Poor';
+    }
+    """
+
+    # Extract the score from the response and get its corresponding category
+         * def score = response.score
+         * def scoreCategory = call getScoreCategory score
+
+    # Print the score and its corresponding category
+         Then print 'Credit Score:', score
+         And print 'Score Category:', scoreCategory
