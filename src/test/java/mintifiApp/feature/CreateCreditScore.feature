@@ -29,10 +29,17 @@ Scenario: [TC-CCS-01] To verify the customer Credit Score API
         And header Authorization = Authorization
         When method GET
         Then status 200
-        And def score = response.score
-        Then print score
-        And def type = response.type
-        Then print type
+        # Check if the score node exists and is not empty
+        And match response.score != '' && response.score != null
+
+        # Print the score after validation
+        Then print 'Score:', response.score
+
+        # Check if the type node exists and is not empty
+        And match response.type != '' && response.type != null
+
+        # Print the type after validation
+        Then print 'Type:', response.type
 
     # Define a function to convert the numeric score to the corresponding category
     * def getScoreCategory = 
