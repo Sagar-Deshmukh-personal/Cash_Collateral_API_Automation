@@ -23,7 +23,7 @@ Scenario: [TC-CCS-01] To verify the customer Credit Score API
        * print fetchGenrateCsrfScenario
        * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
 
-    
+    # After completion of Auth and login then call the Get API of Credit Score.
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCheckCreditScore
         And headers getHeaders
         And header Authorization = Authorization
