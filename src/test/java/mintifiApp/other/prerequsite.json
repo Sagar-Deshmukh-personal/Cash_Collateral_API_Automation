@@ -12,7 +12,8 @@
         "typeAuthCreateInvoice": "/invoices",
         "typeAuthCreateTicket": "/tickets",
         "typeAuthUpdateMobile": "/otp/mobile-email",
-        "typeAuthConfirmMobile": "/customer/mobile-email"
+        "typeAuthConfirmMobile": "/customer/mobile-email",
+        "typeAuthCheckCreditScore": "/customer/credit-score"
       },
 
     "actualHeaders": {

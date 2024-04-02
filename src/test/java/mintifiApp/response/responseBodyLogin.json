@@ -105,7 +105,12 @@
     "requestId": "",
     "blockedTime": 0,
     "accountLocked": false
-}
+  },
+
+   "verifyCreditScore":{
+    "score": "",
+    "type": "Good"
+  }
 
 
 
