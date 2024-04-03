@@ -29,30 +29,29 @@ Scenario: [TC-CCS-01] To verify the customer Credit Score API
         And header Authorization = Authorization
         When method GET
         Then status 200
-        # Check if the score node exists and is not empty
+    # Check if the score node exists and is not empty
         And match response.score != '' && response.score != null
 
-        # Print the score after validation
+     # Print the score after validation
         Then print 'Score:', response.score
 
-        # Check if the type node exists and is not empty
+    # Check if the type node exists and is not empty
         And match response.type != '' && response.type != null
 
-        # Print the type after validation
+     # Print the type after validation
         Then print 'Type:', response.type
 
     # Define a function to convert the numeric score to the corresponding category
-    * def getScoreCategory = 
-      """
-    function(score) {
-      if(score >= 851) return 'Excellent';
-      else if(score >= 751) return 'Good';
-      else if(score >= 651) return 'Fair';
-      else if(score >= 300) return 'Poor';
-      else return 'Very Poor';
-    }
-    """
-
+        * def getScoreCategory = 
+        """
+       function(score) {
+         if(score >= 851) return 'Excellent';
+        else if(score >= 751) return 'Good';
+        else if(score >= 651) return 'Fair';
+        else if(score >= 300) return 'Poor';
+        else return 'Very Poor';
+       }
+       """
     # Extract the score from the response and get its corresponding category
          * def score = response.score
          * def scoreCategory = call getScoreCategory score
