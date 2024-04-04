@@ -68,10 +68,3 @@ Scenario: [TC-CDL-01] To verify the customer document list API
 
     # Print the document combinations
     * print 'Document Combinations:', documentCombinations
-
-    # Iterate over ccApplicableIds
-* def ccApplicableIds = response.ccApplicableIds
-* karate.forEach(ccApplicableIds, function(id) {
-    print 'ID:', id
-    # Perform additional actions here for each ID if needed
-})
