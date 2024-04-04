@@ -1,4 +1,4 @@
-@document
+@sanity @document
 Feature: To demonstarte the customer document list API
 
 Background:
