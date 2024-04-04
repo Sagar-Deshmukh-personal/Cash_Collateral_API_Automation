@@ -13,7 +13,8 @@
         "typeAuthCreateTicket": "/tickets",
         "typeAuthUpdateMobile": "/otp/mobile-email",
         "typeAuthConfirmMobile": "/customer/mobile-email",
-        "typeAuthCheckCreditScore": "/customer/credit-score"
+        "typeAuthCheckCreditScore": "/customer/credit-score",
+        "typeAuthUserDocumentList":"/documents"
       },
 
     "actualHeaders": {
