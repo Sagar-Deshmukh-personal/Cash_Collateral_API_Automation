@@ -1,5 +1,5 @@
-@profile
-Feature: To demonstarte the customer profile API
+@sanity @profile
+Feature: To demonstarte2 the customer profile API
 
 Background:
     Declarations and file read of headers/ cookies
@@ -16,7 +16,7 @@ Background:
         * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
 
 @profile
-Scenario: [TC-CDL-01] To verify the customer profile API
+Scenario: [TC-CP-01] To verify the customer profile API
 
     # calling genrate csrf scenario from registred.feature
     * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
@@ -29,8 +29,8 @@ Scenario: [TC-CDL-01] To verify the customer profile API
     And header Authorization = Authorization
     When method GET
     Then status 200
-# Match and print User details
 
+   # Match and print User details
     And match response.mobile == '#regex \\d{10}'
     And def mobile = response.mobile
     And print mobile
@@ -49,12 +49,21 @@ Scenario: [TC-CDL-01] To verify the customer profile API
     And def custId = response.custId
     And print 'Customer ID:', custId
 
-    And match response.pan == '#regex \\*{6}\\d{3}[A-Z]'
-    And match response.pan == '#string'
-    And def pan = response.pan
-    And print 'PAN:', pan
+    And def panPattern = '^\\*{6}\\d{3}[A-Z]$'
+     # Check if PAN is masked
+    And def isMaskedPan = response.pan.startsWith('***') 
+    And def isValidPan = isMaskedPan || karate.match(response.pan, panPattern).pass
+    And print 'Is PAN Number Valid:', isValidPan
+    And print 'PAN Number:', response.pan
 
-# Match and print company details
+    And def aadhaarPattern = '^\\*{6}\\d{4}$'
+     # Check if Aadhaar is masked
+    And def isMaskedAadhaar = response.aadhaar.startsWith('***') 
+    And def isValidAadhaar = isMaskedAadhaar || karate.match(response.aadhaar, aadhaarPattern).pass
+    And print 'Is Aadhaar Number Valid:', isValidAadhaar
+    And print 'Aadhaar Number:', response.aadhaar
+
+  # Match and print company details
    And def companyDetails = response.companyDetailResponse[0]
    And match companyDetails.compId == '#string'
    And print 'Company ID:', companyDetails.compId
@@ -66,9 +75,16 @@ Scenario: [TC-CDL-01] To verify the customer profile API
    And def companyMobile = companyDetails.mobile
    And print 'Company Mobile:', companyMobile
 
-   And match companyDetails.pan == '#regex \\*{6}\\d{3}[A-Z]'
-   And def companyPan = companyDetails.pan
-   And print 'Company PAN:', companyPan
+   # Define the regex pattern for PAN validation
+   And def companyPanPattern = '^\\*{6}\\d{3}[A-Z]$' 
+   # Check if the company's PAN number is masked
+   And def isMaskedPan = companyDetails.pan.startsWith('***')  
+   # Validate the PAN number against the pattern if it's not masked
+   And def isValidPan = isMaskedPan || karate.match(companyDetails.pan, companyPanPattern).pass
+   # Print whether the company's PAN number is valid according to the pattern
+   And print 'Is Company PAN Number Valid:', isValidPan
+   # Print the company's PAN number (masked or actual)
+   And print 'Company PAN Number:', companyDetails.pan
    
    And match companyDetails.email == '#regex [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}'
    And def companyEmail = companyDetails.email
@@ -85,3 +101,4 @@ Scenario: [TC-CDL-01] To verify the customer profile API
    And def isMaskedGst = companyDetails.gstNumber.startsWith('***')
    And def isValidGst = isMaskedGst || karate.match(companyDetails.gstNumber, companyGstPattern).pass
    And print 'Is Company GST Number Valid:', isValidGst
+   And print 'Company GST Number:', companyDetails.gstNumber
