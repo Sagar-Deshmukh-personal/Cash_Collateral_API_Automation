@@ -19,7 +19,7 @@ Background:
 Scenario: [TC-CDL-01] To verify the customer document list API
 
     # calling genrate csrf scenario from registred.feature
-* def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
+    * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
     * print fetchGenrateCsrfScenario
     * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
     
