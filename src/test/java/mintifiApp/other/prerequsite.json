@@ -14,7 +14,8 @@
         "typeAuthUpdateMobile": "/otp/mobile-email",
         "typeAuthConfirmMobile": "/customer/mobile-email",
         "typeAuthCheckCreditScore": "/customer/credit-score",
-        "typeAuthUserDocumentList":"/documents"
+        "typeAuthUserDocumentList":"/documents",
+        "typeAuthCustomerProfile": "/customer/profile"
       },
 
     "actualHeaders": {
