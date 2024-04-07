@@ -15,7 +15,8 @@
         "typeAuthConfirmMobile": "/customer/mobile-email",
         "typeAuthCheckCreditScore": "/customer/credit-score",
         "typeAuthUserDocumentList":"/documents",
-        "typeAuthCustomerProfile": "/customer/profile"
+        "typeAuthCustomerProfile": "/customer/profile",
+        "typeAuthCheckPaidInvoice": "/invoices/paid"
       },
 
     "actualHeaders": {
