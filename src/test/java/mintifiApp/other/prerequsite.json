@@ -16,7 +16,8 @@
         "typeAuthCheckCreditScore": "/customer/credit-score",
         "typeAuthUserDocumentList":"/documents",
         "typeAuthCustomerProfile": "/customer/profile",
-        "typeAuthCheckPaidInvoice": "/invoices/paid"
+        "typeAuthCheckPaidInvoice": "/invoices/paid",
+        "typeAuthNofification": "/notifications?page=0&size=10"
       },
 
     "actualHeaders": {
