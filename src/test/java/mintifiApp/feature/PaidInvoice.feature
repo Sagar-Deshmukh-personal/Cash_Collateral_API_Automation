@@ -1,5 +1,5 @@
 @paidinvoice
-Feature: To demonstarte2 the customer profile API
+Feature: To demonstarte the customere Paid invoice API
 
 Background:
     Declarations and file read of headers/ cookies
@@ -16,7 +16,7 @@ Background:
         * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
 
 @paidinvoice
-Scenario: [TC-CP-01] To verify the customer profile API
+Scenario: [TC-PI-01] To verify the Paid Invoice API
 
     # calling genrate csrf scenario from registred.feature
     * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')

@@ -1,5 +1,5 @@
 @notification
-Feature: To demonstarte2 the customer profile API
+Feature: To demonstarte the customer Notification API
 
 Background:
     Declarations and file read of headers/ cookies
@@ -16,7 +16,7 @@ Background:
         * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
 
 @notification
-Scenario: [TC-CP-01] To verify the customer profile API
+Scenario: [TC-NF-01] To verify the Notification API
 
     # calling genrate csrf scenario from registred.feature
     * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
