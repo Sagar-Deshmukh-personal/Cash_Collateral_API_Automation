@@ -30,7 +30,7 @@ public class mintifiTest {
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
 
-        Configuration config = new Configuration(new File("docs"), "mintifiApp");
+        Configuration config = new Configuration(new File("target"), "mintifiApp");
 
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
