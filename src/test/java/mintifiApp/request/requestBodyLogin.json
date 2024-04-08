@@ -37,11 +37,11 @@
 
     "verifyCreatInvoiceRequest":{
         "anchorId": "38",
-        "loanApplicationId": "65974",
-        "invoiceDate": "2024-03-21",
-        "dueDate": "2024-04-21",
+        "loanApplicationId": "66131",
+        "invoiceDate": "",
+        "dueDate": "",
         "total": "100",
-        "gstInvoiceId": "56566770",
+        "gstInvoiceId": "",
         "qrInvoice": "false"
     },
 
