@@ -17,7 +17,7 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: mvn test "-Dkarate.options=--tags @tempinvoice"
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/upload-artifact@v4
         with:
           name: github-pages
           path: _site
