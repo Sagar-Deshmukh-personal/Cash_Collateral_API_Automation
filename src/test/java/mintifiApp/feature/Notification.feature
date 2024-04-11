@@ -39,7 +39,7 @@ Scenario: [TC-NF-01] To verify the Notification API
 
     * def notifications = response.notifications
     # Loop through each notification and validate the category
-    * def expectedCategories = ["INVOICE_UPLOAD_SUCCESS", "REPAYMENT_SUCCESS", "DRAWDOWN_SUCCESS", "INVOICE_UPLOAD_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS"]
+    * def expectedCategories = ["INVOICE_UPLOAD_SUCCESS", "REPAYMENT_SUCCESS", "DRAWDOWN_SUCCESS", "INVOICE_UPLOAD_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "REPAYMENT_SUCCESS", "INVOICE_UPLOAD_SUCCESS", "REPAYMENT_SUCCESS"]
     * def actualCategories = karate.map(notifications, function(x){ return x.category })
     * karate.forEach(actualCategories, function(category){ karate.log('Actual Category: ', category) })
     * karate.forEach(expectedCategories, function(category){ karate.log('Expected Category: ', category) })
