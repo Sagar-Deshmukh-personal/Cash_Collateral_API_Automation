@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Tag: @invoice</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>mintifiApp</td>
+            <td>11 Apr 2024, 21:15</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Tag Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Tag</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">@invoice</td>
+                    <td      class="passed"    >51</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">51</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="5423459600">5s 423ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="elements">
+
+                  
+<div class="element">
+      <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_mintifiApp-feature-CreateInvoice-feature.html">mintifiApp/feature/CreateInvoice.feature</a>
+    </div>
+  
+  
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_invoice.html">@invoice</a>
+      </div>
+
+  
+  <span class="lead-duration duration">5s 423ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">[TC-invoice-01] To verify the invoice API</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')</span>
+  
+  <span class="lead-duration duration">2s 510ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention"></span>
+  <span class="name">mintifiApp/feature/ExecutionHelper/Loginticket.feature</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def fetchDataFromPrerequisiteFile = read('../other/prerequsite.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getUrl = fetchDataFromPrerequisiteFile.config</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getHeaders = fetchDataFromPrerequisiteFile.actualHeaders</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getRequestBodyLogin = read('../request/requestBodyLogin.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url getUrl.mintifiBaseUrl + getUrl.typeAuthStatusApi</span>
+  
+  <span class="lead-duration duration">013ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">headers getHeaders</span>
+  
+  <span class="lead-duration duration">095ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request getRequestBodyLogin.VerifyTicketceationmobileNo</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">1s 648ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>21:15:43.034 request:
+1 &gt; POST https://api.mintifi.com/test/customer/v1/mpin/status
+1 &gt; User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: 
+1 &gt; Content-Length: 39
+1 &gt; Host: api.mintifi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;mobileNumber&quot;:8894947572,&quot;custId&quot;:&quot;&quot;}
+
+21:15:43.344 response time in milliseconds: 310
+1 &lt; 200
+1 &lt; Date: Thu, 11 Apr 2024 15:45:43 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: APISIX
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; Access-Control-Max-Age: 5
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; Access-Control-Allow-Headers: *
+{&quot;mpinRequired&quot;:true,&quot;blockedTime&quot;:0,&quot;accountLocked&quot;:false}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>21:15:43.344 [print] {
+  &quot;mpinRequired&quot;: true,
+  &quot;blockedTime&quot;: 0,
+  &quot;accountLocked&quot;: false
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">assert responseStatus == 200</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def fetchDataFromPrerequisiteFile = read('../other/prerequsite.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getUrl = fetchDataFromPrerequisiteFile.config</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getHeaders = fetchDataFromPrerequisiteFile.actualHeaders</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def getRequestBodyLogin = read('../request/requestBodyLogin.json')</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyApi</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">headers getHeaders</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request getRequestBodyLogin.verifyTicketCreationmobileno</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def tempbody = getRequestBodyLogin.verifyTicketCreationmobileno</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print tempbody</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>21:15:43.370 [print] {
+  &quot;mobileNumber&quot;: 8894947572,
+  &quot;mpin&quot;: &quot;1111&quot;,
+  &quot;module&quot;: &quot;LOGIN&quot;,
+  &quot;custId&quot;: &quot;&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">702ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>21:15:43.372 request:
+1 &gt; POST https://api.mintifi.com/test/customer/v1/mpin/verify
+1 &gt; User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Authorization: 
+1 &gt; Content-Length: 70
+1 &gt; Host: api.mintifi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;mobileNumber&quot;:8894947572,&quot;mpin&quot;:&quot;1111&quot;,&quot;module&quot;:&quot;LOGIN&quot;,&quot;custId&quot;:&quot;&quot;}
+
+21:15:44.071 response time in milliseconds: 684
+1 &lt; 200
+1 &lt; Date: Thu, 11 Apr 2024 15:45:44 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: APISIX
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; Access-Control-Max-Age: 5
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; Access-Control-Allow-Headers: *
+{&quot;statusCode&quot;:&quot;200 OK&quot;,&quot;message&quot;:&quot;Verified successfully&quot;,&quot;token&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCIsXG4gIFwibG9hbkFwcGxpY2F0aW9uSW5mb1wiIDogXCJbNjYxMzUtVEwtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzNC1TQ0YtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzMi1UTC1hY3RpdmUtMzgtMjU5NzQ0NjEsIDY2MTMxLVNDRi1hY3RpdmUtMzgtMjU5NzQ0NjFdXCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.gGKTQkYC_L6w1dmYDmBz_D-pzgdhkYVxkw3SfcKhuLU&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.a0P5W5Q110rgt5H99k-Eq8s5F4_m1QYHP_rgAOPc9qU&quot;,&quot;showMpin&quot;:false}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>21:15:44.075 [print] {
+  &quot;statusCode&quot;: &quot;200 OK&quot;,
+  &quot;message&quot;: &quot;Verified successfully&quot;,
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCIsXG4gIFwibG9hbkFwcGxpY2F0aW9uSW5mb1wiIDogXCJbNjYxMzUtVEwtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzNC1TQ0YtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzMi1UTC1hY3RpdmUtMzgtMjU5NzQ0NjEsIDY2MTMxLVNDRi1hY3RpdmUtMzgtMjU5NzQ0NjFdXCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.gGKTQkYC_L6w1dmYDmBz_D-pzgdhkYVxkw3SfcKhuLU&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.a0P5W5Q110rgt5H99k-Eq8s5F4_m1QYHP_rgAOPc9qU&quot;,
+  &quot;showMpin&quot;: false
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">assert responseStatus == 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">fetchDataFromPrerequisiteFile.actualToken.token = response.token</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">fetchDataFromPrerequisiteFile.actualToken.refreshToken = response.refreshToken</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def storedLoginTokenValues = fetchDataFromPrerequisiteFile.actualToken</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">print storedLoginTokenValues</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>21:15:44.075 [print] {
+  &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCIsXG4gIFwibG9hbkFwcGxpY2F0aW9uSW5mb1wiIDogXCJbNjYxMzUtVEwtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzNC1TQ0YtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzMi1UTC1hY3RpdmUtMzgtMjU5NzQ0NjEsIDY2MTMxLVNDRi1hY3RpdmUtMzgtMjU5NzQ0NjFdXCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.gGKTQkYC_L6w1dmYDmBz_D-pzgdhkYVxkw3SfcKhuLU&quot;,
+  &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.a0P5W5Q110rgt5H99k-Eq8s5F4_m1QYHP_rgAOPc9qU&quot;
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print fetchGenrateCsrfScenario</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>21:15:44.085 [print] {
+  &quot;tempbody&quot;: {
+    &quot;mobileNumber&quot;: 8894947572,
+    &quot;mpin&quot;: &quot;1111&quot;,
+    &quot;module&quot;: &quot;LOGIN&quot;,
+    &quot;custId&quot;: &quot;&quot;
+  },
+  &quot;getUrl&quot;: {
+    &quot;mintifiBaseUrl&quot;: &quot;https://api.mintifi.com/test/customer/v1&quot;,
+    &quot;typeAuthStatusApi&quot;: &quot;/mpin/status&quot;,
+    &quot;typeAuthVerifyApi&quot;: &quot;/mpin/verify&quot;,
+    &quot;typeAuthStatusCustidApi&quot;: &quot;/mpin/status&quot;,
+    &quot;typeAuthVerifyCustidApi&quot;: &quot;/mpin/verify&quot;,
+    &quot;typeAuthSendOtpAPI&quot;: &quot;/otp&quot;,
+    &quot;typeAuthVerifyOtpAPI&quot;: &quot;/otp/verify&quot;,
+    &quot;typeAuthCreateDrawdown&quot;: &quot;/invoices/createDrawdown&quot;,
+    &quot;typeAuthCreateInvoice&quot;: &quot;/invoices&quot;,
+    &quot;typeAuthCreateTicket&quot;: &quot;/tickets&quot;,
+    &quot;typeAuthUpdateMobile&quot;: &quot;/otp/mobile-email&quot;,
+    &quot;typeAuthConfirmMobile&quot;: &quot;/customer/mobile-email&quot;,
+    &quot;typeAuthCheckCreditScore&quot;: &quot;/customer/credit-score&quot;,
+    &quot;typeAuthUserDocumentList&quot;: &quot;/documents&quot;,
+    &quot;typeAuthCustomerProfile&quot;: &quot;/customer/profile&quot;,
+    &quot;typeAuthCheckPaidInvoice&quot;: &quot;/invoices/paid&quot;,
+    &quot;typeAuthNofification&quot;: &quot;/notifications?page=0&amp;size=10&quot;
+  },
+  &quot;fetchDataFromPrerequisiteFile&quot;: {
+    &quot;config&quot;: &quot;#ref:java.util.LinkedHashMap&quot;,
+    &quot;actualHeaders&quot;: {
+      &quot;User-Agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36&quot;,
+      &quot;Content-Type&quot;: &quot;application/json&quot;,
+      &quot;Authorization&quot;: &quot;&quot;
+    },
+    &quot;actualToken&quot;: {
+      &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCIsXG4gIFwibG9hbkFwcGxpY2F0aW9uSW5mb1wiIDogXCJbNjYxMzUtVEwtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzNC1TQ0YtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzMi1UTC1hY3RpdmUtMzgtMjU5NzQ0NjEsIDY2MTMxLVNDRi1hY3RpdmUtMzgtMjU5NzQ0NjFdXCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.gGKTQkYC_L6w1dmYDmBz_D-pzgdhkYVxkw3SfcKhuLU&quot;,
+      &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.a0P5W5Q110rgt5H99k-Eq8s5F4_m1QYHP_rgAOPc9qU&quot;
+    },
+    &quot;actualRequestid&quot;: {
+    }
+  },
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 11 Apr 2024 15:45:44 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Vary&quot;: [
+      &quot;Origin&quot;,
+      &quot;Access-Control-Request-Method&quot;,
+      &quot;Access-Control-Request-Headers&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=31536000&quot;
+    ],
+    &quot;X-Content-Type-Options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;X-XSS-Protection&quot;: [
+      &quot;0&quot;
+    ],
+    &quot;Cache-Control&quot;: [
+      &quot;no-cache, no-store, max-age=0, must-revalidate&quot;
+    ],
+    &quot;Pragma&quot;: [
+      &quot;no-cache&quot;
+    ],
+    &quot;Expires&quot;: [
+      &quot;0&quot;
+    ],
+    &quot;X-Frame-Options&quot;: [
+      &quot;DENY&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;APISIX&quot;
+    ],
+    &quot;Access-Control-Allow-Origin&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Methods&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Max-Age&quot;: [
+      &quot;5&quot;
+    ],
+    &quot;Access-Control-Expose-Headers&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Access-Control-Allow-Headers&quot;: [
+      &quot;*&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+    ]
+  },
+  &quot;getHeaders&quot;: &quot;#ref:java.util.LinkedHashMap&quot;,
+  &quot;response&quot;: {
+    &quot;statusCode&quot;: &quot;200 OK&quot;,
+    &quot;message&quot;: &quot;Verified successfully&quot;,
+    &quot;token&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCIsXG4gIFwibG9hbkFwcGxpY2F0aW9uSW5mb1wiIDogXCJbNjYxMzUtVEwtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzNC1TQ0YtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzMi1UTC1hY3RpdmUtMzgtMjU5NzQ0NjEsIDY2MTMxLVNDRi1hY3RpdmUtMzgtMjU5NzQ0NjFdXCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.gGKTQkYC_L6w1dmYDmBz_D-pzgdhkYVxkw3SfcKhuLU&quot;,
+    &quot;refreshToken&quot;: &quot;eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.a0P5W5Q110rgt5H99k-Eq8s5F4_m1QYHP_rgAOPc9qU&quot;,
+    &quot;showMpin&quot;: false
+  },
+  &quot;responseTime&quot;: 684,
+  &quot;storedLoginTokenValues&quot;: &quot;#ref:java.util.LinkedHashMap&quot;,
+  &quot;responseStatus&quot;: 200,
+  &quot;getRequestBodyLogin&quot;: {
+    &quot;validMobileNumber&quot;: {
+      &quot;mobileNumber&quot;: 8894947572,
+      &quot;custId&quot;: &quot;&quot;
+    },
+    &quot;verifyMobileNumberUseingMpin&quot;: {
+      &quot;mobileNumber&quot;: 8894947572,
+      &quot;mpin&quot;: &quot;1111&quot;,
+      &quot;module&quot;: &quot;LOGIN&quot;,
+      &quot;custId&quot;: &quot;&quot;
+    },
+    &quot;validCustid&quot;: {
+      &quot;mobileNumber&quot;: &quot;&quot;,
+      &quot;custId&quot;: &quot;ZDO682&quot;
+    },
+    &quot;verifyCustidUseingMpin&quot;: {
+      &quot;mobileNumber&quot;: &quot;&quot;,
+      &quot;mpin&quot;: 1111,
+      &quot;module&quot;: &quot;LOGIN&quot;,
+      &quot;custId&quot;: &quot;ZDO682&quot;
+    },
+    &quot;verifySendOtp&quot;: {
+      &quot;mobileNumber&quot;: &quot;9096632691&quot;,
+      &quot;module&quot;: &quot;LOGIN&quot;,
+      &quot;custId&quot;: &quot;&quot;
+    },
+    &quot;verifyOtp&quot;: {
+      &quot;requestId&quot;: &quot;&quot;,
+      &quot;otp&quot;: &quot;111111&quot;
+    },
+    &quot;verifyCreatInvoiceRequest&quot;: {
+      &quot;anchorId&quot;: &quot;38&quot;,
+      &quot;loanApplicationId&quot;: &quot;66131&quot;,
+      &quot;invoiceDate&quot;: &quot;&quot;,
+      &quot;dueDate&quot;: &quot;&quot;,
+      &quot;total&quot;: &quot;100&quot;,
+      &quot;gstInvoiceId&quot;: &quot;&quot;,
+      &quot;qrInvoice&quot;: &quot;false&quot;
+    },
+    &quot;verifyDrawdownRequest&quot;: {
+      &quot;drawdown_invoice&quot;: [
+        {
+          &quot;invoice_details&quot;: [
+            {
+              &quot;id&quot;: &quot;55558110&quot;,
+              &quot;user_requested_amount&quot;: &quot;500&quot;
+            }
+          ],
+          &quot;bank_account_id&quot;: &quot;30684&quot;
+        }
+      ],
+      &quot;distributor_company_id&quot;: &quot;25974384&quot;,
+      &quot;anchor_id&quot;: &quot;38&quot;
+    },
+    &quot;VerifyTicketceationmobileNo&quot;: {
+      &quot;mobileNumber&quot;: 8894947572,
+      &quot;custId&quot;: &quot;&quot;
+    },
+    &quot;verifyTicketCreationmobileno&quot;: &quot;#ref:java.util.LinkedHashMap&quot;,
+    &quot;verifyTCSRequest&quot;: {
+      &quot;category&quot;: &quot;DDR related&quot;,
+      &quot;subCategory&quot;: &quot;DDR amount clarification required&quot;,
+      &quot;description&quot;: &quot;Need to Clarify the DDR Amount&quot;
+    },
+    &quot;verifyTCErrorRequest&quot;: {
+      &quot;category&quot;: &quot; &quot;,
+      &quot;subCategory&quot;: &quot;DDR amount clarification required&quot;,
+      &quot;description&quot;: &quot;Need to Clarify the DDR Amount&quot;
+    },
+    &quot;verifyUpdateMobileno&quot;: {
+      &quot;mobileNumber&quot;: &quot;7890876543&quot;,
+      &quot;pan&quot;: &quot;GZJPW8073F&quot;,
+      &quot;module&quot;: &quot;UPDATE_MOBILE&quot;
+    },
+    &quot;verifyConfirmUpdateMobileno&quot;: {
+      &quot;requestId&quot;: &quot;&quot;,
+      &quot;otp&quot;: &quot;111111&quot;
+    },
+    &quot;verifyExistingUserMobileNo&quot;: {
+      &quot;mobileNumber&quot;: &quot;9834661017&quot;,
+      &quot;pan&quot;: &quot;GZJPW8073F&quot;,
+      &quot;module&quot;: &quot;UPDATE_MOBILE&quot;
+    },
+    &quot;verifyUpdateEmail&quot;: {
+      &quot;email&quot;: &quot;&quot;,
+      &quot;module&quot;: &quot;UPDATE_EMAIL&quot;
+    },
+    &quot;verifyconfirmEmail&quot;: {
+      &quot;requestId&quot;: &quot;&quot;,
+      &quot;otp&quot;: &quot;111111&quot;,
+      &quot;module&quot;: &quot;UPDATE_EMAIL&quot;
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateInvoice</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Content-Type = 'multipart/form-data'</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = Authorization</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dynamicGstInvoiceId = 'gstId_&lt;img&gt;' + Math.floor(Math.random() * 5000)  // Example dynamic GST Invoice ID</span>
+  
+  <span class="lead-duration duration">015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def LocalDate = Java.type('java.time.LocalDate')</span>
+  
+  <span class="lead-duration duration">006ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dynamicInvoiceDate = LocalDate.now().toString() // Current date as invoice date</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def dynamicDueDate = LocalDate.now().plusDays(10).toString() // Due date 7 days now</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">print dynamicGstInvoiceId</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>21:15:44.135 [print] gstId_&lt;img&gt;602 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def StoreInvoiceValue = dynamicGstInvoiceId</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field anchorId = '38'</span>
+  
+  <span class="lead-duration duration">097ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field loanApplicationId = '66131'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field invoiceDate = dynamicInvoiceDate</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field dueDate = dynamicDueDate</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field total = '500'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field gstInvoiceId = dynamicGstInvoiceId</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">multipart field qrInvoice = false</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+  
+  <span class="lead-duration duration">273ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>21:15:44.239 request:
+1 &gt; POST https://api.mintifi.com/test/customer/v1/invoices
+1 &gt; Content-Type: multipart/form-data; boundary=d90726b47e0fb056
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJjdXN0SWQiOiJGR00wNDMiLCJzdWIiOiJ7XG4gIFwidXNlcklkXCIgOiBcIjQ3ODU3XCIsXG4gIFwibG9hbkFwcGxpY2F0aW9uSW5mb1wiIDogXCJbNjYxMzUtVEwtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzNC1TQ0YtYWN0aXZlLTYyLTI1OTc0NDYxLCA2NjEzMi1UTC1hY3RpdmUtMzgtMjU5NzQ0NjEsIDY2MTMxLVNDRi1hY3RpdmUtMzgtMjU5NzQ0NjFdXCJcbn0iLCJpYXQiOjE3MTI4NTAzNDQsImV4cCI6MTcxMjg1NzU0NH0.gGKTQkYC_L6w1dmYDmBz_D-pzgdhkYVxkw3SfcKhuLU
+1 &gt; Content-Length: 1017
+1 &gt; Host: api.mintifi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_202)
+1 &gt; Accept-Encoding: gzip,deflate
+
+content-disposition: form-data; name=&quot;anchorId&quot;; filename=&quot;&quot;
+content-type: text/plain; charset=UTF-8
+content-length: 2
+Completed: true
+IsInMemory: true
+
+content-disposition: form-data; name=&quot;loanApplicationId&quot;; filename=&quot;&quot;
+content-type: text/plain; charset=UTF-8
+content-length: 5
+Completed: true
+IsInMemory: true
+
+content-disposition: form-data; name=&quot;invoiceDate&quot;; filename=&quot;&quot;
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+content-disposition: form-data; name=&quot;dueDate&quot;; filename=&quot;&quot;
+content-type: text/plain; charset=UTF-8
+content-length: 10
+Completed: true
+IsInMemory: true
+
+content-disposition: form-data; name=&quot;total&quot;; filename=&quot;&quot;
+content-type: text/plain; charset=UTF-8
+content-length: 3
+Completed: true
+IsInMemory: true
+
+content-disposition: form-data; name=&quot;gstInvoiceId&quot;; filename=&quot;&quot;
+content-type: text/plain; charset=UTF-8
+content-length: 14
+Completed: true
+IsInMemory: true
+
+content-disposition: form-data; name=&quot;qrInvoice&quot;; filename=&quot;&quot;
+content-type: application/octet-stream
+content-length: 5
+Completed: true
+IsInMemory: true
+
+
+21:15:44.506 response time in milliseconds: 267
+1 &lt; 200
+1 &lt; Date: Thu, 11 Apr 2024 15:45:45 GMT
+1 &lt; Content-Type: text/plain;charset=UTF-8
+1 &lt; Content-Length: 1549
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; Strict-Transport-Security: max-age=31536000
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Server: APISIX
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Access-Control-Allow-Methods: *
+1 &lt; Access-Control-Max-Age: 5
+1 &lt; Access-Control-Expose-Headers: *
+1 &lt; Access-Control-Allow-Headers: *
+{&quot;data&quot;:{&quot;id&quot;:&quot;55558239&quot;,&quot;type&quot;:&quot;invoice&quot;,&quot;attributes&quot;:{&quot;id&quot;:55558239,&quot;disbursement_amount&quot;:null,&quot;amount&quot;:null,&quot;due_amount&quot;:null,&quot;discount_amount&quot;:null,&quot;customer_code&quot;:&quot;BFZPA6082L&quot;,&quot;company_code&quot;:null,&quot;payment_method&quot;:null,&quot;payment_status&quot;:null,&quot;payment_terms&quot;:null,&quot;delivery_note&quot;:null,&quot;currency&quot;:null,&quot;anchor_gstin&quot;:null,&quot;distributor_gstin&quot;:null,&quot;reference&quot;:null,&quot;status&quot;:&quot;open&quot;,&quot;anchor_id&quot;:38,&quot;distributor_company_id&quot;:25974461,&quot;erp_invoice_id&quot;:null,&quot;document_type&quot;:null,&quot;created_by&quot;:null,&quot;updated_by&quot;:null,&quot;total&quot;:&quot;500.0&quot;,&quot;cgst&quot;:null,&quot;igst&quot;:null,&quot;sgst&quot;:null,&quot;file_url&quot;:null,&quot;gl_account&quot;:null,&quot;fiscal_year&quot;:null,&quot;gst_invoice_id&quot;:&quot;gstId_\u003cimg\u003e602&quot;,&quot;virtual_account_number&quot;:null,&quot;creation_date&quot;:&quot;2024-04-11&quot;,&quot;invoice_date&quot;:&quot;2024-04-11&quot;,&quot;document_number&quot;:&quot;gstId_\u003cimg\u003e602&quot;,&quot;disbursement_date&quot;:null,&quot;due_date&quot;:&quot;2024-04-21&quot;,&quot;posting_date&quot;:null,&quot;balance_due&quot;:0.0,&quot;approved_limit&quot;:0.0,&quot;available_limit&quot;:0.0,&quot;balance_amount&quot;:0.0,&quot;payment_date&quot;:null,&quot;latest_payment_settlement_date&quot;:null,&quot;latest_payment_settlement_amount&quot;:null,&quot;latest_payment_utr_number&quot;:null,&quot;latest_payment_source&quot;:null,&quot;due_with_mintifi&quot;:null,&quot;overdue_by_days&quot;:null,&quot;mintifi_limit&quot;:null,&quot;balance_amount_percentage&quot;:null,&quot;amount_paid&quot;:null,&quot;distributor_name&quot;:null,&quot;collected_outside_mintifi&quot;:null,&quot;supplier_bank&quot;:null,&quot;ddr_status_date&quot;:null,&quot;invoice_rejected_ddr&quot;:null},&quot;relationships&quot;:{&quot;distributor_company&quot;:{&quot;data&quot;:{&quot;id&quot;:&quot;25974461&quot;,&quot;type&quot;:&quot;distributor_company&quot;}},&quot;anchor&quot;:{&quot;data&quot;:{&quot;id&quot;:&quot;38&quot;,&quot;type&quot;:&quot;anchor&quot;}},&quot;resource&quot;:{&quot;data&quot;:null},&quot;invoice_image&quot;:{&quot;data&quot;:null}}}}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">print &quot;Response: &quot;, response</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>21:15:44.506 [print] Response:  {
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;55558239&quot;,
+    &quot;type&quot;: &quot;invoice&quot;,
+    &quot;attributes&quot;: {
+      &quot;id&quot;: 55558239,
+      &quot;disbursement_amount&quot;: null,
+      &quot;amount&quot;: null,
+      &quot;due_amount&quot;: null,
+      &quot;discount_amount&quot;: null,
+      &quot;customer_code&quot;: &quot;BFZPA6082L&quot;,
+      &quot;company_code&quot;: null,
+      &quot;payment_method&quot;: null,
+      &quot;payment_status&quot;: null,
+      &quot;payment_terms&quot;: null,
+      &quot;delivery_note&quot;: null,
+      &quot;currency&quot;: null,
+      &quot;anchor_gstin&quot;: null,
+      &quot;distributor_gstin&quot;: null,
+      &quot;reference&quot;: null,
+      &quot;status&quot;: &quot;open&quot;,
+      &quot;anchor_id&quot;: 38,
+      &quot;distributor_company_id&quot;: 25974461,
+      &quot;erp_invoice_id&quot;: null,
+      &quot;document_type&quot;: null,
+      &quot;created_by&quot;: null,
+      &quot;updated_by&quot;: null,
+      &quot;total&quot;: &quot;500.0&quot;,
+      &quot;cgst&quot;: null,
+      &quot;igst&quot;: null,
+      &quot;sgst&quot;: null,
+      &quot;file_url&quot;: null,
+      &quot;gl_account&quot;: null,
+      &quot;fiscal_year&quot;: null,
+      &quot;gst_invoice_id&quot;: &quot;gstId_&lt;img&gt;602&quot;,
+      &quot;virtual_account_number&quot;: null,
+      &quot;creation_date&quot;: &quot;2024-04-11&quot;,
+      &quot;invoice_date&quot;: &quot;2024-04-11&quot;,
+      &quot;document_number&quot;: &quot;gstId_&lt;img&gt;602&quot;,
+      &quot;disbursement_date&quot;: null,
+      &quot;due_date&quot;: &quot;2024-04-21&quot;,
+      &quot;posting_date&quot;: null,
+      &quot;balance_due&quot;: 0.0,
+      &quot;approved_limit&quot;: 0.0,
+      &quot;available_limit&quot;: 0.0,
+      &quot;balance_amount&quot;: 0.0,
+      &quot;payment_date&quot;: null,
+      &quot;latest_payment_settlement_date&quot;: null,
+      &quot;latest_payment_settlement_amount&quot;: null,
+      &quot;latest_payment_utr_number&quot;: null,
+      &quot;latest_payment_source&quot;: null,
+      &quot;due_with_mintifi&quot;: null,
+      &quot;overdue_by_days&quot;: null,
+      &quot;mintifi_limit&quot;: null,
+      &quot;balance_amount_percentage&quot;: null,
+      &quot;amount_paid&quot;: null,
+      &quot;distributor_name&quot;: null,
+      &quot;collected_outside_mintifi&quot;: null,
+      &quot;supplier_bank&quot;: null,
+      &quot;ddr_status_date&quot;: null,
+      &quot;invoice_rejected_ddr&quot;: null
+    },
+    &quot;relationships&quot;: {
+      &quot;distributor_company&quot;: {
+        &quot;data&quot;: {
+          &quot;id&quot;: &quot;25974461&quot;,
+          &quot;type&quot;: &quot;distributor_company&quot;
+        }
+      },
+      &quot;anchor&quot;: {
+        &quot;data&quot;: {
+          &quot;id&quot;: &quot;38&quot;,
+          &quot;type&quot;: &quot;anchor&quot;
+        }
+      },
+      &quot;resource&quot;: {
+        &quot;data&quot;: null
+      },
+      &quot;invoice_image&quot;: {
+        &quot;data&quot;: null
+      }
+    }
+  }
+}
+ 
+</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
