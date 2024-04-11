@@ -22,7 +22,6 @@ Scenario: [TC-Tk-01] Verify successful/error ticket creation
 
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
        * headers getHeaders
-       * headers fetchGenrateCsrfScenario.storedLoginTokenValues
          And header Authorization = Authorization
          And request getRequestBodyLogin.verifyTCSRequest
          When method post
@@ -38,7 +37,6 @@ Scenario: [TC-Tk-01] Verify successful/error ticket creation
 
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
         * headers getHeaders
-        * headers fetchGenrateCsrfScenario.storedLoginTokenValues
         And header Authorization = Authorization
         And request getRequestBodyLogin.verifyTCErrorRequest
         When method post
