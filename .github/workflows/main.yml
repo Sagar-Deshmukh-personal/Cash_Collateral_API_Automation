@@ -20,7 +20,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: mvn test "-Dkarate.options=--tags @invoice"
+      - run: mvn test "-Dkarate.options=--tags @sanity"
       - uses: actions/upload-artifact@v4
         with:
           name: github-pages

@@ -1,4 +1,4 @@
-@paidinvoice
+@sanity @paidinvoice
 Feature: To demonstarte the customere Paid invoice API
 
 Background:

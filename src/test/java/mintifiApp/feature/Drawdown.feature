@@ -1,4 +1,4 @@
-@sanity @drawdown 
+@drawdown 
 Feature: To demonstarte Drawdown api testcases 
 
 Background:

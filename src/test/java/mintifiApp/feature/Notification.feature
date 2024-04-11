@@ -1,4 +1,4 @@
-@notification
+@sanity @notification
 Feature: To demonstarte the customer Notification API
 
 Background:
