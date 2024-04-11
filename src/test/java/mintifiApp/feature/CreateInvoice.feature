@@ -1,4 +1,4 @@
-@sanity @Invoice
+@Invoice
 Feature: To demonstarte invoice api testcases 
 
 Background:
