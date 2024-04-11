@@ -62,12 +62,12 @@
     },
     
     "VerifyTicketceationmobileNo":{
-        "mobileNumber": 8894947572,
+        "mobileNumber": 7586586986,
         "custId": ""
     },
 
-    "verifyTicketCreationmobileno":{
-        "mobileNumber": 8894947572,
+    "verifyMPINTicketCreationmobileno":{
+        "mobileNumber": 7586586986,
         "mpin": "1111",
         "module": "LOGIN",
         "custId": ""
