@@ -14,7 +14,7 @@ Background:
     Scenario:[TC-TLG-01] To verify 'Login' feature for gentating token using Mobile
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthStatusApi
         * headers getHeaders
-        And request getRequestBodyLogin.VerifyTicketceationmobileNo
+        And request getRequestBodyLogin.validMobileNumber
         When method post
         Then status 200
         And print response
@@ -24,8 +24,8 @@ Background:
     Scenario: [TC-LG-02]To verify 'Login' feature for gentating token
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyApi
         * headers getHeaders
-        And request getRequestBodyLogin.verifyTicketCreationmobileno
-        * def tempbody = getRequestBodyLogin.verifyTicketCreationmobileno
+        And request getRequestBodyLogin.verifyMobileNumberUseingMpin
+        * def tempbody = getRequestBodyLogin.verifyMobileNumberUseingMpin
         * print tempbody
         When method post
         Then status 200
