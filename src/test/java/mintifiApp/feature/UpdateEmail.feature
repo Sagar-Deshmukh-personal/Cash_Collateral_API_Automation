@@ -52,4 +52,4 @@ Scenario: [TC-UPM-01] Verify updatemobile no for the customer
          Then print requestBody
          When method PUT
          Then print response
-         And assert responseStatus == 200   
+         And assert responseStatus == 200
