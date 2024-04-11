@@ -14,14 +14,14 @@
     
     "validCustid":{
         "mobileNumber": "",
-        "custId": "ZDO682"
+        "custId": "OVP596"
     },
 
     "verifyCustidUseingMpin": {
         "mobileNumber": "",
         "mpin": 1111,
         "module": "LOGIN",
-        "custId": "ZDO682"
+        "custId": "OVP596"
     },
 
     "verifySendOtp":{

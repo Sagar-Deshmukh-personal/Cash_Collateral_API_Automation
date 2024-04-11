@@ -16,9 +16,9 @@ Background:
 @ticket
 Scenario: [TC-Tk-01] Verify successful/error ticket creation
        # calling genrate csrf secanrio from registred.feature
-       * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Loginticket.feature@generateLoginToken')
-       * print fetchGenrateCsrfScenario
-       * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedLoginTokenValues.token)
+      * def fetchGenrateCsrfScenario = call read('ExecutionHelper/Register.feature@generateToken')
+      * print fetchGenrateCsrfScenario
+      * karate.set('Authorization', 'Bearer ' + fetchGenrateCsrfScenario.storedTokenValues.token)
 
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCreateTicket
        * headers getHeaders

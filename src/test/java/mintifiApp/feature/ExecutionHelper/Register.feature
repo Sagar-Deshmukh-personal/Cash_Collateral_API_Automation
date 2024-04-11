@@ -12,10 +12,10 @@ Background:
     * def getRequestBodyLogin = read('../request/requestBodyLogin.json')
     
     @generateToken
-    Scenario: To verify 'Login with Mobile no" with using Mpin
+    Scenario: To verify 'Login with Cust id" with using Mpin
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthStatusApi
         * headers getHeaders
-        And request getRequestBodyLogin.validMobileNumber
+        And request getRequestBodyLogin.validCustid
         When method post
         Then status 200
         And print response
@@ -25,11 +25,11 @@ Background:
         And assert responseStatus == 200
     
     @generateToken
-    Scenario: To verify 'Mpin' for login with mobile no
+    Scenario: To verify 'Mpin' for login with cust id
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthVerifyApi
         * headers getHeaders
-        And request getRequestBodyLogin.verifyMobileNumberUseingMpin
-        * def tempbody = getRequestBodyLogin.verifyMobileNumberUseingMpin
+        And request getRequestBodyLogin.verifyCustidUseingMpin
+        * def tempbody = getRequestBodyLogin.verifyCustidUseingMpin
         * print tempbody
         When method post
         Then status 200
