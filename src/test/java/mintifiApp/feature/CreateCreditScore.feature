@@ -29,6 +29,7 @@ Scenario: [TC-CCS-01] To verify the customer Credit Score API
         And header Authorization = Authorization
         When method GET
         Then status 200
+
     # Check if the score node exists and is not empty
         And match response.score != '' && response.score != null
 

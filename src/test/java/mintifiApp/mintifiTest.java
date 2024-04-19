@@ -19,7 +19,7 @@ public class mintifiTest {
         Results results = Runner.path("classpath:mintifiApp")   
                 .outputCucumberJson(true)
                 .tags("~@ignore") // Exclude any ignored tags
-                .parallel(5); // Specify the number of threads for parallel execution
+                .parallel(1); // Specify the number of threads for parallel execution
                 generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0,results.getErrorMessages());
         //assertEquals(0, results.getFailCount(), results.getErrorMessages());

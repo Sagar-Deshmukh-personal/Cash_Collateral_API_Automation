@@ -1,4 +1,4 @@
-@Invoice
+@sanity
 Feature: To demonstarte invoice api testcases 
 
 Background:
@@ -46,7 +46,8 @@ Scenario: [TC-invoice-01] To verify the invoice API
 
 # Send the POST request with form data
     When method post
- # Verify the response status code
+
+# Verify the response status code
     Then status 200
 
 # Print the response for debugging
