@@ -71,15 +71,15 @@ Scenario: [TC-invoice-01] To verify the invoice and create drawdown API
             {
                 "invoice_details": [
                     {
-                        "id": "#(invoice_id)",           //Use the invoice ID from the invoice scenario
-                        "user_requested_amount": "500"  // Adjust this value as needed
+                        "id": "#(invoice_id)",
+                        "user_requested_amount": "500"  
                     }
                 ],
-                "bank_account_id": "30684"   // Adjust this value as needed
+                "bank_account_id": "30684"   
             }
         ],
-        "distributor_company_id":  "#(distributorCompanyId)", // Use the distributor company ID from the invoice
-        "anchor_id": "#(anchorId)" // // Use the anchor ID from the invoice scenario
+        "distributor_company_id":  "#(distributorCompanyId)", 
+        "anchor_id": "#(anchorId)" 
     }
     """
    And request requestPayload

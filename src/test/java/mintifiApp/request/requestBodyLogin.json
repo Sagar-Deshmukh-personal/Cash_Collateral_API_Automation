@@ -34,32 +34,6 @@
         "requestId": "",
         "otp": "111111"
     },
-
-    "verifyCreatInvoiceRequest":{
-        "anchorId": "38",
-        "loanApplicationId": "66131",
-        "invoiceDate": "",
-        "dueDate": "",
-        "total": "100",
-        "gstInvoiceId": "",
-        "qrInvoice": "false"
-    },
-
-    "verifyDrawdownRequest":{
-        "drawdown_invoice": [
-            {
-                "invoice_details": [
-                    {
-                        "id": "55558110",
-                        "user_requested_amount": "500"
-                    }
-                ],
-                "bank_account_id": "30684"
-            }
-        ],
-        "distributor_company_id": "25974384",
-        "anchor_id": "38"
-    },
     
     "VerifyTicketceationmobileNo":{
         "mobileNumber": 7586586986,
