@@ -17,7 +17,8 @@
         "typeAuthUserDocumentList":"/documents",
         "typeAuthCustomerProfile": "/customer/profile",
         "typeAuthCheckPaidInvoice": "/invoices/paid",
-        "typeAuthNofification": "/notifications?page=0&size=10"
+        "typeAuthNofification": "/notifications?page=0&size=10",
+        "typeAuthCustomer": "/customer/"
       },
 
     "actualHeaders": {
