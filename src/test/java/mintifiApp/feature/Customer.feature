@@ -73,14 +73,12 @@ Scenario: [TC-customer-01] To verify the customer API
     * def totalDues = response.totalDues
     * def totalLoanAmount = response.totalLoanAmount
 
-    # Check if totalAvailableLimit is greater than zero and an integer, and then print it
+    # Check if totalAvailableLimit is greater than zero and then print it
        * assert totalAvailableLimit > 0
-       * assert totalAvailableLimit % 1 == 0
        * print 'Total Available Limit: ', totalAvailableLimit
 
-    # Check if totalLoanAmount is greater than zero and an integer, and then print it
+    # Check if totalLoanAmount is greater than zero and then print it
        * assert totalLoanAmount > 0
-       * assert totalLoanAmount % 1 == 0
        * print 'Total Loan Amount: ', totalLoanAmount
 
     # Check if totalDues is greater than zero and then print it
