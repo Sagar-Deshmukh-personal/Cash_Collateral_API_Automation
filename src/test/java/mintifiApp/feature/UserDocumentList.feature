@@ -68,3 +68,9 @@ Scenario: [TC-CDL-01] To verify the customer document list API
 
     # Print the document combinations
     * print 'Document Combinations:', documentCombinations
+
+    # Store the some data to use another request
+    * def documentMap = {}
+    * def temp = response.activeLoanDocuments
+    * karate.forEach(temp, function(doc){ documentMap[doc.documentId] = doc.documentName })
+    * print documentMap
