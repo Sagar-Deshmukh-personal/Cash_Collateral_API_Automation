@@ -1,0 +1,37 @@
+{
+    "config": {
+        "mintifiBaseUrl": "https://api.mintifi.com/test/customer/v1",
+
+        "typeAuthStatusApi": "/mpin/status",
+        "typeAuthVerifyApi": "/mpin/verify",
+        "typeAuthStatusCustidApi": "/mpin/status",
+        "typeAuthVerifyCustidApi": "/mpin/verify",
+        "typeAuthSendOtpAPI": "/otp",
+        "typeAuthVerifyOtpAPI": "/otp/verify",
+        "typeAuthCreateDrawdown": "/invoices/createDrawdown",
+        "typeAuthCreateInvoice": "/invoices",
+        "typeAuthCreateTicket": "/tickets",
+        "typeAuthUpdateMobile": "/otp/mobile-email",
+        "typeAuthConfirmMobile": "/customer/mobile-email",
+        "typeAuthCheckCreditScore": "/customer/credit-score",
+        "typeAuthUserDocumentList":"/documents",
+        "typeAuthCustomerProfile": "/customer/profile",
+        "typeAuthCheckPaidInvoice": "/invoices/paid",
+        "typeAuthNofification": "/notifications?page=0&size=10",
+        "typeAuthCustomer": "/customer/"
+      },
+
+    "actualHeaders": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+        "Content-Type": "application/json",
+        "Authorization": ""
+    },
+
+    "actualToken": {
+        
+    },
+
+    "actualRequestid":{
+        
+    } 
+}

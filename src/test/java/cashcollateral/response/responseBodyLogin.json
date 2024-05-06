@@ -1,9 +1,0 @@
-{
-
-   "verifyStatusResponse":{
-    "mpinRequired": true,
-    "blockedTime": 0,
-    "accountLocked": false
-  }
-  
-}

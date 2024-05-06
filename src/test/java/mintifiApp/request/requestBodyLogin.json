@@ -1,0 +1,90 @@
+{
+
+    "validMobileNumber":{
+        "mobileNumber": 8894947572    ,
+        "custId": ""
+    },
+    
+    "verifyMobileNumberUseingMpin": {
+        "mobileNumber": 8894947572,
+        "mpin": "1111",
+        "module": "LOGIN",
+        "custId": ""
+    },
+    
+    "validCustid":{
+        "mobileNumber": "",
+        "custId": "OVP596"
+    },
+
+    "verifyCustidUseingMpin": {
+        "mobileNumber": "",
+        "mpin": 1111,
+        "module": "LOGIN",
+        "custId": "OVP596"
+    },
+
+    "verifySendOtp":{
+        "mobileNumber": "8894947572",
+        "module": "LOGIN",
+        "custId": ""
+    },
+
+    "verifyOtp":{
+        "requestId": "",
+        "otp": "111111"
+    },
+    
+    "VerifyTicketceationmobileNo":{
+        "mobileNumber": 7586586986,
+        "custId": ""
+    },
+
+    "verifyMPINTicketCreationmobileno":{
+        "mobileNumber": 7586586986,
+        "mpin": "1111",
+        "module": "LOGIN",
+        "custId": ""
+    },
+
+    "verifyTCSRequest":{
+        "category": "DDR related",
+        "subCategory": "DDR amount clarification required",
+        "description": "Need to Clarify the DDR Amount"
+    },
+
+    "verifyTCErrorRequest":{
+        "category": " ",
+        "subCategory": "DDR amount clarification required",
+        "description": "Need to Clarify the DDR Amount"
+    },
+
+    "verifyUpdateMobileno":{
+        "mobileNumber": "7890876543",
+        "pan": "GZJPW8073F",
+        "module": "UPDATE_MOBILE"
+    },
+
+    "verifyConfirmUpdateMobileno":{
+        "requestId": "",
+        "otp": "111111"
+    },
+
+    "verifyExistingUserMobileNo":{
+        "mobileNumber": "9834661017",
+        "pan": "GZJPW8073F",
+        "module": "UPDATE_MOBILE"
+    },
+
+    "verifyUpdateEmail":{
+        "email": "",
+        "module": "UPDATE_EMAIL"
+    },
+
+    "verifyconfirmEmail":{
+        "requestId": "",
+        "otp": "111111",
+        "module": "UPDATE_EMAIL"
+      }
+    
+}

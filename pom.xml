@@ -4,13 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>cashcollateral</groupId>
-  <artifactId>cashcollateral</artifactId>
+  <groupId>mintifiApp</groupId>
+  <artifactId>mintifiwebApp</artifactId>
   <version>1.3.1</version>
 
-  <name>cashcollateral</name>
+  <name>mintifiApp</name>
   <!-- FIXME change it to the project's website -->
-  <url>https://api.mintifi.com/</url>
+  <url>https://app5.test.mintifi.com/dashboard</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

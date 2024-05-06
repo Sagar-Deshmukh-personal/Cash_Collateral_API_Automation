@@ -1,0 +1,115 @@
+{
+
+   "verifyStatusResponse":{
+    "mpinRequired": true,
+    "blockedTime": 0,
+    "accountLocked": false
+  },
+
+  "verifyMpinLogin": {
+    "statusCode": "200 OK",
+    "message": "Verified successfully",
+    "token": "",
+    "refreshToken": "",
+    "showMpin": false
+  },
+
+   "verifyMpinLoginFuzzyMatch": {
+    "statusCode": "#string",
+    "message": "#string",
+    "token": "#string",
+    "refreshToken": "#string",
+    "showMpin": "#boolean"
+  },
+   "verifyStatusResponseFuzzyMatch":{
+    "mpinRequired": "#boolean",
+    "blockedTime": "#number",
+    "accountLocked": "#boolean"
+  },
+
+  "verificationStatusResponseOtp":{
+    "statusCode": 200,
+    "message": "OTP sent successfully",
+    "requestId": "",
+    "blockedTime": 0,
+    "accountLocked": false
+  },
+ 
+  "verifyStatusSucessOtpResponse":{
+    "statusCode": "200 OK",
+    "message": "OTP verified successfully",
+    "token": "",
+    "refreshToken": "",
+    "showMpin": false
+  },
+  
+  "verifyStatusResponseFuzzyMatchOfOtp":{
+    "statusCode": "#number",
+    "message": "#string",
+    "requestId": "#string",
+    "blockedTime": "#number",
+    "accountLocked": "#boolean"
+  },
+ 
+  "verifyDrawdownSuccessResponse":{
+    "id": "" ,
+    "drawdown_amount": "",
+    "status": "verified",
+    "message": "Request to utilise your Mintifi credit has been submitted successfully!"
+  },
+
+  "verifyDrawdownErrorResponse":{
+  "fieldName": null,
+  "message": "{\"errors\":[{\"status\":422,\"code\":\"ER-PARAM-MISSING-501\",\"detail\":\"Cannot create Drawdown as Invoice is already Paid\"}]}",
+  "statusCode": 500
+  },
+
+  "verifyTCSResponse": {
+   "statusCode": 200,
+   "message": "Success"
+  },
+
+  "verifyTCEResponse":{
+    "statusCode": 500,
+    "message": "Ticket creation failed"
+  },
+ 
+  "verifyUpdateMobileresponse":{
+    "statusCode": 200,
+    "message": "OTP sent successfully",
+    "requestId": "",
+    "blockedTime": 0,
+    "accountLocked": false
+  },
+
+  "verifySuccessMobileUpdateResponse":{
+    "statusCode": 200,
+    "message": "Updated successfully"
+  },
+
+  "verifyExistingUserMobileNoResponse":{
+    "fieldName": null,
+    "message": "Mobile Number is already associated with another account",
+    "statusCode": 400
+  },
+
+  "verifyUpdateEmailResponse":{
+    "requestId": "",
+    "otp": "111111",
+    "module": "UPDATE_EMAIL"
+  },
+
+  "verifyEmailSucessResponse":{
+    "statusCode": 200,
+    "message": "OTP sent successfully",
+    "requestId": "",
+    "blockedTime": 0,
+    "accountLocked": false
+  },
+
+   "verifyCreditScore":{
+    "score": "",
+    "type": ""
+  }
+  
+}
