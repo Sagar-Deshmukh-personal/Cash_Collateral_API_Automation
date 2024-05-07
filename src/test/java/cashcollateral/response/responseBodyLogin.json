@@ -1,9 +1,47 @@
 {
 
-   "verifyStatusResponse":{
-    "mpinRequired": true,
-    "blockedTime": 0,
-    "accountLocked": false
-  }
+   "verifyCCEconomicsActualResponse":{
+    "errors": [
+      {
+        "source": {
+          "pointer": "/api/v1/cc_economics"
+        },
+        "detail": [
+          "Loan account number can't be blank",
+          "Cc amount must be greater than 0.0",
+          "Interest rate must be greater than or equal to 0.0"
+        ],
+        "code": "ER-GEN-401"
+      }
+    ]
+  },
+
+  "verifyCCEcoFuturedateResponse": {
+    "errors": [
+      {
+        "source": {
+          "pointer": "/api/v1/cc_economics"
+        },
+        "detail": [
+          "disbursement_date cannot be future date"
+        ],
+        "code": "ER-GEN-401"
+      }
+    ]
+  },
+  "verifyCCEconomicCustidNull": {
+    "errors": [
+        {
+            "source": {
+                "pointer": "/api/v1/cc_economics"
+            },
+            "detail": [
+                "Cust can't be blank"
+            ],
+            "code": "ER-GEN-401"
+        }
+    ]
+}
+  
 
 }

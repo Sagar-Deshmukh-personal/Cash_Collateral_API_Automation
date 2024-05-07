@@ -7,8 +7,40 @@
             "cc_amount": 8000000,
             "interest_rate": 10.0,
             "loan_application_id": "",
+            "disbursement_date": ""
+        }
+    },
+    "emptycc_economicsRequest":{
+        "cc_economic": {
+            "loan_account_number":"",
+            "cust_id": "DNT657",
+            "cc_amount": 0,
+            "interest_rate": -10.0,
+            "loan_application_id": "",
             "disbursement_date": "2024-05-07"
         }
+    },
+    "validcc_economicsfuturedate":{
+        "cc_economic": {
+            "loan_account_number":"",
+            "cust_id": "DNT657",
+            "cc_amount": 80000000,
+            "interest_rate": 10.0,
+            "loan_application_id": "",
+            "disbursement_date": ""
+        }
+    },
+    
+    "emptycc_economicsCustid":{
+        "cc_economic": {
+            "loan_account_number":"OD131538",
+            "cust_id": "",
+            "cc_amount": 8000000,
+            "interest_rate": 10,
+            "loan_application_id": "131538",
+            "disbursement_date": ""
+        }
     }
+
     
 }
