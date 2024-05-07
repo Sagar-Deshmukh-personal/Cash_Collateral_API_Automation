@@ -1,8 +1,14 @@
 {
 
-    "validMobileNumber":{
-        "mobileNumber": 8894947572    ,
-        "custId": ""
+    "validcc_economics":{
+        "cc_economic": {
+            "loan_account_number":"OD131540",
+            "cust_id": "DNT657",
+            "cc_amount": 8000000,
+            "interest_rate": 10.0,
+            "loan_application_id": "131540",
+            "disbursement_date": "2024-05-07"
+        }
     }
     
 }

@@ -2,14 +2,16 @@
     "config": {
         "mintifiBaseUrl": "https://api.mintifi.com/test/cc/v1",
 
-        "typeAuthStatusApi": "/mpin/status"
+        "typeAuthCCEconomicsApi": "/cc_economics"
        
       },
 
     "actualHeaders": {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
         "Content-Type": "application/json",
-        "Authorization": ""
+        "Authorization": "",
+        "api-key": "77ccc027b45cbdd352fa2d32"
+    
     },
 
     "actualToken": {
