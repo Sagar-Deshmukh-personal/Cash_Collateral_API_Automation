@@ -1,4 +1,4 @@
-package mintifiApp;
+package cashcollateral;
 
 import com.intuit.karate.Results;
 import com.intuit.karate.Runner;
@@ -12,11 +12,11 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import org.apache.commons.io.FileUtils;
 
-public class mintifiTest {
+public class cashcollateralTest {
 
     @Test
     void testParallel() {
-        Results results = Runner.path("classpath:mintifiApp")   
+        Results results = Runner.path("classpath:cashcollateral")   
                 .outputCucumberJson(true)
                 .tags("~@ignore") // Exclude any ignored tags
                 .parallel(1); // Specify the number of threads for parallel execution
@@ -30,7 +30,7 @@ public class mintifiTest {
         List<String> jsonPaths = new ArrayList<>(jsonFiles.size());
         jsonFiles.forEach(file -> jsonPaths.add(file.getAbsolutePath()));
 
-        Configuration config = new Configuration(new File("target"), "mintifiApp");
+        Configuration config = new Configuration(new File("target"), "cashcollateral");
 
         ReportBuilder reportBuilder = new ReportBuilder(jsonPaths, config);
         reportBuilder.generateReports();
