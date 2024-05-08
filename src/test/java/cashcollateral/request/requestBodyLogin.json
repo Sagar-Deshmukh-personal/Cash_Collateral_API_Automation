@@ -40,6 +40,13 @@
             "loan_application_id": "131538",
             "disbursement_date": ""
         }
+    },
+    "validatecreatecredit":{
+        "cc_credit": {
+            "loan_account_number": "OD131538",
+            "amount": 8000000,
+            "date": "2024-04-25"
+        }
     }
 
     
