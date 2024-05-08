@@ -41,7 +41,39 @@
             "code": "ER-GEN-401"
         }
     ]
+},
+
+    "verifyerrorcreditResponse":{
+      "errors": [
+          {
+              "source": {
+                  "pointer": "/api/v1/cc_credits"
+              },
+              "detail": [
+                  "Loan account number can't be blank",
+                  "Amount must be greater than 0.0"
+              ],
+              "code": "ER-GEN-401"
+          }
+      ]
+  },
+   
+  "verifyerrorcreditResponseamount":{
+    "errors": [
+        {
+            "source": {
+                "pointer": "/api/v1/cc_credits"
+            },
+            "detail": [
+                "Amount must be greater than 0.0"
+            ],
+            "code": "ER-GEN-401"
+        }
+    ]
+},
+  "verifyerrorcreditResponsedate":{
+    "status": 500,
+    "error": "Internal Server Error"
 }
   
-
 }
