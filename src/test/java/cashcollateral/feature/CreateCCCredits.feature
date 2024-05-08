@@ -46,7 +46,7 @@ Scenario: [TC-CCC-01] To verify the CC cedits API success response
 Scenario: [TC-CCC-02] To verify the CC cedits API error response for empty loan account no and amount zero
         Given url getUrl.mintifiBaseUrl + getUrl.typeCreateCreditApi
         And headers getHeaders
-        And request getRequestBodyLogin.invalidcreditrequest
+        And request getRequestBodyLogin.emptycreditrequest
         When method post
         Then status 422
         And print response
