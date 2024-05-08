@@ -14,10 +14,10 @@ Background:
         * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
     
 @cccredit
-Scenario: [TC-CCE-01] To verify the CC cedits API
+Scenario: [TC-CCE-01] To verify the CC cedits API success response
 
     # Call the feature file to fetch stored loan account number
-        * def fetchvalue = call read('CreateCCEconomices.feature@token')
+        * def fetchvalue = call read('CreateCCEconomices.feature@passvalue')
         * def loanaccountno = fetchvalue.response.data.attributes.loan_account_number
         * print loanaccountno
         * def loanamount = fetchvalue.response.data.attributes.cc_amount
