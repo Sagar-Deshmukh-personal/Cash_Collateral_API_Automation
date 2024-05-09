@@ -40,6 +40,26 @@ Scenario:[TC-CCE-01] To verify the CC Ecomices API
         * print storedloanaccountnumber
         * def storedccamount = response.data.attributes.cc_amount
         * print storedccamount
+    # Validate that every node is either a string or an integer
+        # Validate the 'data' node
+        * match response.data.id == '#string'
+        * match response.data.type == '#string'
+        # Validate the 'attributes' node under 'data' node
+        * match response.data.attributes.id == '#number'
+        * match response.data.attributes.cc_summary_id == '#number'
+        * match response.data.attributes.cust_id == '#string'
+        * match response.data.attributes.loan_account_number ==  '#string'
+        * match response.data.attributes.cc_amount == '#string'
+        * match response.data.attributes.interest_rate == '#string'
+        * match response.data.attributes.cc_balance == '#string'
+        * match response.data.attributes.cc_paid == '#string'
+        * match response.data.attributes.interest_accrued == '#string'
+        * match response.data.attributes.posted_interest == '#string'
+        * match response.data.attributes.cc_deficit == '#string'
+        * match response.data.attributes.tds_deducted == '#string'
+        * match response.data.attributes.loan_application_id == '#string'
+        * match response.data.attributes.cc_account_number == '#string'
+        * match response.data.attributes.net_interest == '#string'
 
 @cceco
 Scenario:[TC-CCE-02] To verify the CC Ecomices API Some request nodes send as empty or wrong(Like Negarive value)
