@@ -41,6 +41,15 @@ Scenario: [TC-CCC-01] To verify the CC cedits API success response
         When method POST
         Then status 200
         And print response
+    # Validate that every node is either a string or an integer
+        # Validate the 'data' node
+        * match response.data.id == '#string'
+        * match response.data.type == '#string'
+        # Validate the 'attributes' node under 'data' node
+        * match response.data.attributes.id == '#number'
+        * match response.data.attributes.loan_account_number == '#string'
+        * match response.data.attributes.amount == '#string'
+        * match response.data.attributes.date == '#string'
 
 @cccredit
 Scenario: [TC-CCC-02] To verify the CC cedits API error response for empty loan account no and amount zero
