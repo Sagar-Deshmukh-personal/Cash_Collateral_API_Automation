@@ -58,4 +58,3 @@ Scenario: [TC-In-05] Verify the CC Economics Index API with dynamic query like c
         Then status 200
         And match response.data[0].attributes.cust_id == requestPayload.q.cust_id_cont
         And print response
-
