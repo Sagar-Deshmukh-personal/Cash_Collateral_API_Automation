@@ -3,7 +3,8 @@
         "mintifiBaseUrl": "https://api.mintifi.com/test/cc/v1",
 
         "typeAuthCCEconomicsApi": "/cc_economics",
-        "typeCreateCreditApi": "/cc_credits"
+        "typeCreateCreditApi": "/cc_credits",
+        "typeAuthCCEconomicsIndex": "/cc_economics/"
        
       },
 
