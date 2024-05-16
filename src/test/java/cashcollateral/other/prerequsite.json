@@ -4,7 +4,8 @@
 
         "typeAuthCCEconomicsApi": "/cc_economics",
         "typeCreateCreditApi": "/cc_credits",
-        "typeAuthCCEconomicsIndex": "/cc_economics/"
+        "typeAuthCCEconomicsIndex": "/cc_economics/",
+        "typeAuthCCLedgersApi": "/cc_ledgers"
        
       },
 
