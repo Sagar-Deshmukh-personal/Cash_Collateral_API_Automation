@@ -46,3 +46,21 @@ Scenario: [TC-Ld-03] Verify the CC ledger Index API without sending any paramete
            * print 'Response Count: ', responseCount
            And def idCount = karate.sizeOf(response.data)
            And print 'Count of id entries: ', idCount
+@showledgers
+Scenario: [TC-Ld-04] Verify the CC ledger show API without sending any parameter
+             Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCLedgersApi
+             And headers getHeaders
+             When method GET
+             Then status 200
+            * print response
+
+@showledgers
+Scenario: [TC-Ld-05] Verify the CC ledger show API without sending any parameter
+          Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCLedgersApi + '/191'
+          And headers getHeaders
+          When method GET
+          Then status 200
+          * def response = response
+          * print response
+          * match response.data.id == '191'
+          * match response.data.attributes.id == 191
