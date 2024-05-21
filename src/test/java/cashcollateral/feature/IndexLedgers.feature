@@ -1,5 +1,5 @@
 @sanity @ledgers
-Feature: To Check the CC Ledgers Index API
+Feature: To Check the CC Ledgers Index and show API
 Background:
     #Declarations and file read of headers/ cookies
         * def fetchDataFromPrerequisiteFile = read('../other/prerequsite.json')
@@ -46,7 +46,7 @@ Scenario: [TC-Ld-03] Verify the CC ledger Index API without sending any paramete
            * print 'Response Count: ', responseCount
            And def idCount = karate.sizeOf(response.data)
            And print 'Count of id entries: ', idCount
-@showledgers
+@showledgers @ledgers
 Scenario: [TC-Ld-04] Verify the CC ledger show API without sending any parameter
              Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCLedgersApi
              And headers getHeaders
@@ -54,7 +54,7 @@ Scenario: [TC-Ld-04] Verify the CC ledger show API without sending any parameter
              Then status 200
             * print response
 
-@showledgers
+@showledgers @ledgers
 Scenario: [TC-Ld-05] Verify the CC ledger show API without sending any parameter
           Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCLedgersApi + '/191'
           And headers getHeaders
