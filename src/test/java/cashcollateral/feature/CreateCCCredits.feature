@@ -13,7 +13,7 @@ Background:
         * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
     
 @cccredit
-Scenario: [TC-CCC-01] To verify the CC cedits API success response
+Scenario: [TC-CCC-01] To verify the CC cedits API success response for current date
 
     # Call the feature file to fetch stored loan account number
         * def fetchvalue = call read('CreateCCEconomices.feature@passvalue')
@@ -88,3 +88,29 @@ Scenario: [TC-CCC-04] To verify the CC cedits API error response for date node
         * print expectedResponse
     # Validate error response message
         And match response == expectedResponse
+@cccredit
+Scenario: [TC-CCC-05] To verify the CC credits API success response for backdate date
+
+    # Call the feature file to fetch stored loan account number
+        * def fetchvalue = call read('CreateCCEconomices.feature@passvalue')
+        * def loanaccountno = fetchvalue.response.data.attributes.loan_account_number
+        * def loanamount = fetchvalue.response.data.attributes.cc_amount
+        
+        Given url getUrl.mintifiBaseUrl + getUrl.typeCreateCreditApi
+        And headers getHeaders
+    # Rest of the steps
+        And def requestBody = getRequestBodyLogin.validatecreatecredit
+        And requestBody.cc_credit.loan_account_number = loanaccountno
+        And requestBody.cc_credit.amount = loanamount
+        
+    # Set a specific backdated date (one day back)
+        And def backDate = java.time.LocalDate.now().minusDays(1)
+        And def formattedBackDate = backDate.toString()
+        
+    # Set the updated disbursement date in the request to the backdated date
+        And requestBody.cc_credit.date = formattedBackDate
+        And request requestBody
+        When method POST
+        Then status 200
+        And print response
+        
