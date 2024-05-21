@@ -46,7 +46,7 @@ Scenario: [TC-SM-03] Verify the CC Summaries Index API without sending any param
              * print 'Response Count: ', responseCount
              And def idCount = karate.sizeOf(response.data)
              And print 'Count of id entries: ', idCount
-@showSummaries
+@showSummaries @Summaries
 Scenario: [TC-SM-04] Verify the CC Summaries show API without sending any parameter
                Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCSummariesApi
                And headers getHeaders
@@ -54,7 +54,7 @@ Scenario: [TC-SM-04] Verify the CC Summaries show API without sending any parame
                Then status 200
               * print response
   
-@showSummaries
+@showSummaries @Summaries
 Scenario: [TC-SM-05] Verify the CC Summaries show API without sending any parameter
             Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCLedgersApi + '/72'
             And headers getHeaders
