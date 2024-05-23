@@ -11,7 +11,7 @@ Background:
     #Declarations and file read of 'json' response body
         * def getResponseBodyLogin = read('../response/responseBodyLogin.json') 
     
-@cceco @passvalue
+@cceco
 Scenario:[TC-CCE-01] To verify the CC Ecomices API
         Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCEconomicsApi
         And headers getHeaders
@@ -117,3 +117,45 @@ Scenario:[TC-CCE-04] To verify the CC Ecomices API cust id is null
         * print expectedResponse
     # Validate error response message
         And match response == expectedResponse
+@cceco @passvalue
+Scenario:[TC-CCE-05] To verify the CC Economics API genrating random loanaccount no,cust id
+        Given url getUrl.mintifiBaseUrl + getUrl.typeAuthCCEconomicsApi
+        And headers getHeaders
+        # Create a deep copy of the request body
+        And def requestBody = getRequestBodyLogin.validcc_economicsgeneraterandomvalue
+        # Generate a random number
+        And def randomNumber = Math.floor(Math.random() * (999999 - 100000 + 1)) + 100000
+        # Use the random number for loan_account_number
+        And def loanAccountNumber = 'OD' + randomNumber
+        And requestBody.cc_economic.loan_account_number = loanAccountNumber
+        # Use the same random number for loan_application_id
+        And requestBody.cc_economic.loan_application_id = randomNumber
+        # Helper function to generate random customer ID
+        And def generateRandomCustomerId =
+        """
+        function() {
+          var letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          var result = '';
+          for (var i = 0; i < 3; i++) {
+            result += letters.charAt(Math.floor(Math.random() * letters.length));
+          }
+          var numbers = Math.floor(Math.random() * 900) + 100; // ensures a 3-digit number
+          return result + numbers;
+        }
+        """
+        # Generate a random customer ID
+        And def randomCustomerId = generateRandomCustomerId()
+        # Use the random customer ID in the request body
+        And requestBody.cc_economic.cust_id = randomCustomerId
+        # Get the current date
+        And def currentDate = java.time.LocalDate.now()
+        # Format the date to yyyy-MM-dd
+        And def formattedDate = currentDate.toString()
+        # Set the updated disbursement date in the request
+        And requestBody.cc_economic.disbursement_date = formattedDate
+        And request requestBody
+        When method post
+        Then status 200
+        And print response
+        And assert responseStatus == 200
+        

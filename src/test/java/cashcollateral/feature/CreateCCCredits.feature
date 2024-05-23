@@ -51,7 +51,7 @@ Scenario: [TC-CCC-01] To verify the CC cedits API success response for current d
         * match response.data.attributes.amount == '#string'
         * match response.data.attributes.date == '#string'
 
-@cccredit
+@cccredit 
 Scenario: [TC-CCC-02] To verify the CC cedits API error response for empty loan account no and amount zero
         Given url getUrl.mintifiBaseUrl + getUrl.typeCreateCreditApi
         And headers getHeaders

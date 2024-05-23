@@ -45,18 +45,19 @@
 
     "verifyerrorcreditResponse":{
       "errors": [
-          {
-              "source": {
-                  "pointer": "/api/v1/cc_credits"
-              },
-              "detail": [
-                  "Loan account number can't be blank",
-                  "Amount must be greater than 0.0"
-              ],
-              "code": "ER-GEN-401"
-          }
+        {
+          "source": {
+            "pointer": "/api/v1/cc_credits"
+          },
+          "detail": [
+            "Loan account number can't be blank",
+            "Amount must be greater than 0.0",
+            "Loan account number not present in cc summary"
+          ],
+          "code": "ER-GEN-401"
+        }
       ]
-  },
+    },
    
   "verifyerrorcreditResponseamount":{
     "errors": [
