@@ -3,7 +3,7 @@
     "validcc_economics":{
         "cc_economic": {
             "loan_account_number":"",
-            "cust_id": "DNT456",
+            "cust_id": "DNT657",
             "cc_amount": 8000000,
             "interest_rate": 10.0,
             "loan_application_id": "",
@@ -13,7 +13,7 @@
     "emptycc_economicsRequest":{
         "cc_economic": {
             "loan_account_number":"",
-            "cust_id": "DNT456",
+            "cust_id": "DNT657",
             "cc_amount": 0,
             "interest_rate": -10.0,
             "loan_application_id": "",
@@ -23,7 +23,7 @@
     "validcc_economicsfuturedate":{
         "cc_economic": {
             "loan_account_number":"",
-            "cust_id": "DNT456",
+            "cust_id": "DNT657",
             "cc_amount": 80000000,
             "interest_rate": 10.0,
             "loan_application_id": "",
@@ -73,7 +73,7 @@
         }
     },
 
-    "validcc_economicsg":{
+    "validcc_economicsgeneraterandomvalue":{
         "cc_economic": {
             "loan_account_number":"",
             "cust_id": "",
@@ -84,6 +84,4 @@
         }
 
     }  
-
-    
 }
