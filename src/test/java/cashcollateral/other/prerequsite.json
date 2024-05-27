@@ -6,7 +6,9 @@
         "typeCreateCreditApi": "/cc_credits",
         "typeAuthCCEconomicsIndex": "/cc_economics/",
         "typeAuthCCLedgersApi": "/cc_ledgers",
-        "typeAuthCCSummariesApi": "/cc_summaries"
+        "typeAuthCCSummariesApi": "/cc_summaries",
+        "typeAuthdailyinterestcron": "/interest_calculations/calculate_daily_accrued_interest",
+        "typeAuthdailyinterestsummary": "/interest_calculations/update_daily_accrued_interest_in_cc_summary"
        
       },
 

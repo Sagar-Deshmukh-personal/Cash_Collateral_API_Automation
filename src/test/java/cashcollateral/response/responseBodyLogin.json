@@ -76,6 +76,13 @@
   "verifyerrorcreditResponsedate":{
     "status": 500,
     "error": "Internal Server Error"
-}
+},
   
+ "verifydailycronresponse":{
+  "message": "Daily interest accrued calculation started."
+},
+ 
+ "verifydailysummaryresponse":{
+  "message": "Daily update interest accrued in cc_summary started."
+}
 }
