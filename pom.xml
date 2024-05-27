@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>cashcollateral</groupId>
-  <artifactId>mintifiwebApp</artifactId>
+  <artifactId>cashcollateral</artifactId>
   <version>1.3.1</version>
 
   <name>cashcollateral</name>
