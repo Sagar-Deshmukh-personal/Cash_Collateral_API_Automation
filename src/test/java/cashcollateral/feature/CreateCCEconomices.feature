@@ -153,6 +153,7 @@ Scenario:[TC-CCE-05] To verify the CC Economics API genrating random loanaccount
         And def formattedDate = currentDate.toString()
         # Set the updated disbursement date in the request
         And requestBody.cc_economic.disbursement_date = formattedDate
+        And requestBody.cc_economic.interest_rate = 10
         And request requestBody
         When method post
         Then status 200
