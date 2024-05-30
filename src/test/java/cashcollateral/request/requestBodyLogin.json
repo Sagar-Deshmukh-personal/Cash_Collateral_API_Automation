@@ -78,10 +78,30 @@
             "loan_account_number":"",
             "cust_id": "",
             "cc_amount": 8000000,
-            "interest_rate": 10.0,
+            "interest_rate": "",
             "loan_application_id": "",
             "disbursement_date": ""
         }
 
-    }  
+    },
+
+    "validateadjustmentrequest": {
+        "cc_adjustment": {
+            "from_loan_account_number": "",
+            "to_loan_account_number":"",
+            "total_amount": "",
+            "principal": "",
+            "interest": "",
+            "adjustment_date": "",
+            "remark": "  "
+        }
+    },
+
+    "validateccentryforadjustment": {
+        "cc_credit": {
+            "loan_account_number": "",
+            "amount": "",
+            "date": ""
+        }
+    }
 }

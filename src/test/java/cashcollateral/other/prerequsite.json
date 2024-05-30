@@ -8,7 +8,8 @@
         "typeAuthCCLedgersApi": "/cc_ledgers",
         "typeAuthCCSummariesApi": "/cc_summaries",
         "typeAuthdailyinterestcron": "/interest_calculations/calculate_daily_accrued_interest",
-        "typeAuthdailyinterestsummary": "/interest_calculations/update_daily_accrued_interest_in_cc_summary"
+        "typeAuthdailyinterestsummary": "/interest_calculations/update_daily_accrued_interest_in_cc_summary",
+        "typeAuthCCAdjustmentApi": "/cc_adjustments"
        
       },
 
@@ -18,13 +19,5 @@
         "Authorization": "",
         "api-key": "77ccc027b45cbdd352fa2d32"
     
-    },
-
-    "actualToken": {
-        
-    },
-
-    "actualRequestid":{
-        
-    } 
+    }
 }
