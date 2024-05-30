@@ -1,3 +1,4 @@
+@sanity @Adjustment
 Feature: To Check the CC Adjustment API. 
 # In this API we have check the customer Adjustment amount entry come for cashcollateral database.
 Background:
