@@ -78,7 +78,7 @@
             "loan_account_number":"",
             "cust_id": "",
             "cc_amount": 8000000,
-            "interest_rate": "",
+            "interest_rate": "10",
             "loan_application_id": "",
             "disbursement_date": ""
         }

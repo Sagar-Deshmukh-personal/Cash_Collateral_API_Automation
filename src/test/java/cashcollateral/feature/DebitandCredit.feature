@@ -46,7 +46,6 @@ Scenario:[TC-EH-01] To verify the CC Economics API genrating random loanaccount 
         And def formattedBackDate = backDate.toString()
     # Set the updated disbursement date in the request
         And requestBody.cc_economic.disbursement_date = formattedBackDate
-        And requestBody.cc_economic.interest_rate = 10
         And request requestBody
         When method post
         Then status 200
